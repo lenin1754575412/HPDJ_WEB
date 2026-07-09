@@ -1,0 +1,50 @@
+# Dependencias
+node_modules/
+
+# Build
+dist/
+build/
+
+# Variables de entorno
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Cachés
+.vite/
+.cache/
+.pnpm-store/
+.eslintcache
+*.tsbuildinfo
+
+# Cobertura
+coverage/
+
+# IDEs
+.vscode/*
+!.vscode/extensions.json
+.idea/
+
+# Sistemas operativos
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Deploy
+.vercel/
+.netlify/
+
+# Storybook
+storybook-static/
+
+# Turbo
+.turbo/

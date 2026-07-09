@@ -1,0 +1,14 @@
+export { Header } from './Header';
+export { Hero } from './Hero';
+export { Services } from './Services';
+export { Tours } from './Tours';
+export { Rooms } from './Rooms';
+export { Hospedaje } from './Hospedaje';
+export { About } from './About';
+export { Stats } from './Stats';
+export { Contact } from './Contact';
+export { Footer } from './Footer';
+export { QuickBooking } from './QuickBooking';
+export { HospedajeServices } from './HospedajeServices';
+export { Policies } from './Policies';
+export { Layout } from './Layout';

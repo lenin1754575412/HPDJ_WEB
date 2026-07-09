@@ -1,0 +1,25 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #B58A4F #2A2520;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #2A2520;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #B58A4F, #D8B17A);
+  border-radius: 4px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #D8B17A, #B58A4F);
+}

@@ -31,27 +31,27 @@ export function About() {
                 <span className="text-[#D8B17A] font-serif text-lg sm:text-xl">
                   H PERU TOURS
                 </span>{" "}
-                naciÃƒÂ³ de la pasiÃƒÂ³n por mostrar al mundo las
-                maravillas del PerÃƒÂº. Desde hace mÃƒÂ¡s de una
-                dÃƒÂ©cada, nos especializamos en crear experiencias
+                naciÃƒÆ’Ã‚Â³ de la pasiÃƒÆ’Ã‚Â³n por mostrar al mundo las
+                maravillas del PerÃƒÆ’Ã‚Âº. Desde hace mÃƒÆ’Ã‚Â¡s de una
+                dÃƒÆ’Ã‚Â©cada, nos especializamos en crear experiencias
                 premium que combinan la riqueza cultural de
-                nuestro paÃƒÂ­s con el confort y la elegancia que
-                nuestros huÃƒÂ©spedes merecen.
+                nuestro paÃƒÆ’Ã‚Â­s con el confort y la elegancia que
+                nuestros huÃƒÆ’Ã‚Â©spedes merecen.
               </p>
 
               <p>
                 Nuestro equipo de profesionales altamente
-                capacitados trabaja incansablemente para diseÃƒÂ±ar
-                paquetes turÃƒÂ­sticos exclusivos que incluyen
-                hospedaje de lujo, gastronomÃƒÂ­a de clase mundial
+                capacitados trabaja incansablemente para diseÃƒÆ’Ã‚Â±ar
+                paquetes turÃƒÆ’Ã‚Â­sticos exclusivos que incluyen
+                hospedaje de lujo, gastronomÃƒÆ’Ã‚Â­a de clase mundial
                 y tours guiados por expertos que conocen cada
-                rincÃƒÂ³n mÃƒÂ¡gico del PerÃƒÂº.
+                rincÃƒÆ’Ã‚Â³n mÃƒÆ’Ã‚Â¡gico del PerÃƒÆ’Ã‚Âº.
               </p>
 
               <p>
                 Creemos que cada viaje debe ser una historia
-                ÃƒÂºnica. Por eso, nos enfocamos en grupos
-                reducidos y atenciÃƒÂ³n personalizada, asegurando
+                ÃƒÆ’Ã‚Âºnica. Por eso, nos enfocamos en grupos
+                reducidos y atenciÃƒÆ’Ã‚Â³n personalizada, asegurando
                 que cada detalle supere tus expectativas.
               </p>
             </div>
@@ -68,21 +68,21 @@ export function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#171411]/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
                 <p className="text-[#F2E7D0] font-serif text-lg sm:text-xl leading-tight">Nuestro Hospedaje</p>
-                <p className="text-[#D8B17A] text-sm">Comodidad en el corazÃƒÂ³n de CelendÃƒÂ­n</p>
+                <p className="text-[#D8B17A] text-sm">Comodidad en el corazÃƒÆ’Ã‚Â³n de CelendÃƒÆ’Ã‚Â­n</p>
               </div>
             </div>
 
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#B58A4F]/20 h-56 sm:h-64">
               <img
                 src="/cafeteria/cafeteria-principal.jpg"
-                alt="CafeterÃƒÂ­a H Peru Tours"
+                alt="CafeterÃƒÆ’Ã‚Â­a H Peru Tours"
                 className="w-full h-full object-cover"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop'; }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#171411]/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-[#F2E7D0] font-serif text-lg sm:text-xl leading-tight">Nuestra CafeterÃƒÂ­a</p>
-                <p className="text-[#D8B17A] text-sm">Sabores peruanos autÃƒÂ©nticos</p>
+                <p className="text-[#F2E7D0] font-serif text-lg sm:text-xl leading-tight">Nuestra CafeterÃƒÆ’Ã‚Â­a</p>
+                <p className="text-[#D8B17A] text-sm">Sabores peruanos autÃƒÆ’Ã‚Â©nticos</p>
               </div>
             </div>
           </div>
@@ -91,17 +91,17 @@ export function About() {
         <div className="mt-20 sm:mt-24 space-y-10 sm:space-y-16">
           <div className="text-center">
             <span className="text-[#D8B17A] tracking-[0.25em] sm:tracking-[0.3em] uppercase text-xs sm:text-sm">
-              Nuestro PropÃƒÂ³sito
+              Nuestro PropÃƒÆ’Ã‚Â³sito
             </span>
 
             <h2 className="text-[2.15rem] sm:text-4xl lg:text-5xl font-serif text-[#F2E7D0] mt-4 leading-tight max-w-[330px] sm:max-w-none mx-auto">
               <span className="block sm:hidden">
-                MisiÃƒÂ³n, VisiÃƒÂ³n
+                MisiÃƒÆ’Ã‚Â³n, VisiÃƒÆ’Ã‚Â³n
                 <br />y Valores
               </span>
 
               <span className="hidden sm:block">
-                MisiÃƒÂ³n, VisiÃƒÂ³n y Valores
+                MisiÃƒÆ’Ã‚Â³n, VisiÃƒÆ’Ã‚Â³n y Valores
               </span>
             </h2>
           </div>
@@ -113,18 +113,18 @@ export function About() {
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-serif text-[#D8B17A] mb-4">
-                MisiÃƒÂ³n
+                MisiÃƒÆ’Ã‚Â³n
               </h3>
 
               <p className="text-[#F2E7D0]/75 leading-7 text-sm sm:text-base lg:text-lg">
                 Somos un hospedaje que brinda a nuestros
-                huÃƒÂ©spedes una estancia inolvidable, basada en la
+                huÃƒÆ’Ã‚Â©spedes una estancia inolvidable, basada en la
                 comodidad, hospitalidad, calidad, seguridad y
-                cultura local, creando una conexiÃƒÂ³n autÃƒÂ©ntica
-                con CelendÃƒÂ­n y sus alrededores. Nos esforzamos
+                cultura local, creando una conexiÃƒÆ’Ã‚Â³n autÃƒÆ’Ã‚Â©ntica
+                con CelendÃƒÆ’Ã‚Â­n y sus alrededores. Nos esforzamos
                 por superar las expectativas de nuestros
-                clientes, promoviendo el desarrollo turÃƒÂ­stico y
-                econÃƒÂ³mico de la comunidad.
+                clientes, promoviendo el desarrollo turÃƒÆ’Ã‚Â­stico y
+                econÃƒÆ’Ã‚Â³mico de la comunidad.
               </p>
             </div>
 
@@ -134,16 +134,16 @@ export function About() {
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-serif text-[#D8B17A] mb-4">
-                VisiÃƒÂ³n
+                VisiÃƒÆ’Ã‚Â³n
               </h3>
 
               <p className="text-[#F2E7D0]/75 leading-7 text-sm sm:text-base lg:text-lg">
-                Ser el hospedaje de referencia en CelendÃƒÂ­n,
-                reconocido por ofrecer experiencias ÃƒÂºnicas, con
+                Ser el hospedaje de referencia en CelendÃƒÆ’Ã‚Â­n,
+                reconocido por ofrecer experiencias ÃƒÆ’Ã‚Âºnicas, con
                 un servicio personalizado, excelencia en calidad
                 y un compromiso sostenible con el entorno y la
-                innovaciÃƒÂ³n continua, impulsando el turismo
-                responsable en la regiÃƒÂ³n.
+                innovaciÃƒÆ’Ã‚Â³n continua, impulsando el turismo
+                responsable en la regiÃƒÆ’Ã‚Â³n.
               </p>
             </div>
 
@@ -157,7 +157,7 @@ export function About() {
               </h3>
 
               <p className="text-[#F2E7D0]/75 leading-7 text-sm sm:text-base lg:text-lg">
-                Integridad, VocaciÃƒÂ³n de servicio, Respeto,
+                Integridad, VocaciÃƒÆ’Ã‚Â³n de servicio, Respeto,
                 Trabajo en equipo.
               </p>
             </div>
@@ -168,11 +168,11 @@ export function About() {
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-serif text-[#D8B17A] mb-4">
-                Horario de atenciÃƒÂ³n
+                Horario de atenciÃƒÆ’Ã‚Â³n
               </h3>
 
               <p className="text-[#F2E7D0]/75 leading-7 text-sm sm:text-base lg:text-lg">
-                Las 24 horas, sÃƒÂ¡bados y domingos.
+                Las 24 horas, sÃƒÆ’Ã‚Â¡bados y domingos.
               </p>
             </div>
           </div>

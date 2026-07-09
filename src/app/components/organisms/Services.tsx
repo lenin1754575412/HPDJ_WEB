@@ -6,17 +6,17 @@ export function Services() {
     {
       icon: FaMountain,
       title: 'Tours Guiados',
-      description: 'Descubre los destinos mÃƒÂ¡s atractivos de CelendÃƒÂ­n con hermosas vistas que te llevarÃƒÂ¡n a travÃƒÂ©s de experiencias inolvidables.',
+      description: 'Descubre los destinos mÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡s atractivos de CelendÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­n con hermosas vistas que te llevarÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡n a travÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s de experiencias inolvidables.',
     },
     {
       icon: FaHotel,
       title: 'Hospedaje Comodo',
-      description: 'Disfruta de habitaciones con todas las comodidades para hacer tu estadÃƒÂ­a perfecta.',
+      description: 'Disfruta de habitaciones con todas las comodidades para hacer tu estadÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a perfecta.',
     },
     {
       icon: FaCar,
-      title: 'Transporte TurÃƒÂ­stico',
-      description: 'Viaja con total comodidad y seguridad en vehÃƒÂ­culos de ÃƒÂºltima generaciÃƒÂ³n con conductores profesionales.',
+      title: 'Transporte TurÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­stico',
+      description: 'Viaja con total comodidad y seguridad en vehÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­culos de ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âºltima generaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n con conductores profesionales.',
     },
   ];
 
@@ -26,7 +26,7 @@ export function Services() {
         <div className="text-center mb-16">
           <span className="text-[#D8B17A] tracking-[0.3em] uppercase text-sm">Nuestros Servicios</span>
           <h2 className="text-4xl lg:text-5xl font-serif text-[#F2E7D0] mt-4">
-            Experiencias DiseÃƒÂ±adas para Ti
+            Experiencias DiseÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±adas para Ti
           </h2>
         </div>
 

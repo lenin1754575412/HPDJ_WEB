@@ -19,7 +19,7 @@ export function ToursPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-4 mb-8">
               <span className="text-[#C8A96B] uppercase tracking-[0.35em] text-sm">
-                Paquetes TurÃƒÂ­sticos
+                Paquetes TurÃƒÆ’Ã‚Â­sticos
               </span>
               <div className="w-24 h-[1px] bg-[#C8A96B]" />
             </div>
@@ -27,7 +27,7 @@ export function ToursPage() {
             <h1 className="font-serif text-5xl lg:text-7xl leading-[1.05] text-[#F2E7D0]">
               Descubre
               <br />
-              lugares ÃƒÂºnicos
+              lugares ÃƒÆ’Ã‚Âºnicos
               <br />y vive una{" "}
               <span className="italic text-[#C8A96B]">
                 aventura inolvidable
@@ -35,9 +35,9 @@ export function ToursPage() {
             </h1>
 
             <p className="mt-8 text-[#F2E7D0]/75 text-lg leading-8 max-w-2xl">
-              El mundo estÃƒÂ¡ lleno de lugares increÃƒÂ­bles;
+              El mundo estÃƒÆ’Ã‚Â¡ lleno de lugares increÃƒÆ’Ã‚Â­bles;
               nosotros te ayudamos a descubrirlos de una manera
-              cÃƒÂ³moda y memorable.
+              cÃƒÆ’Ã‚Â³moda y memorable.
             </p>
           </div>
         </div>

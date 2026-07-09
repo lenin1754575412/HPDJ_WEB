@@ -20,7 +20,7 @@ export function ContactPage() {
           <div className="max-w-3xl">
             <div className="flex items-center gap-4 mb-8">
               <span className="text-[#C8A96B] uppercase tracking-[0.35em] text-sm">
-                ContÃƒÂ¡ctanos
+                ContÃƒÆ’Ã‚Â¡ctanos
               </span>
 
               <div className="w-24 h-[1px] bg-[#C8A96B]" />
@@ -37,9 +37,9 @@ export function ContactPage() {
             </h1>
 
             <p className="mt-8 text-[#F2E7D0]/75 text-lg leading-8 max-w-2xl">
-              Nuestro equipo estÃƒÂ¡ disponible para ayudarte a planificar
-              tu estadÃƒÂ­a, resolver tus consultas y acompaÃƒÂ±arte en cada
-              detalle de tu prÃƒÂ³xima experiencia.
+              Nuestro equipo estÃƒÆ’Ã‚Â¡ disponible para ayudarte a planificar
+              tu estadÃƒÆ’Ã‚Â­a, resolver tus consultas y acompaÃƒÆ’Ã‚Â±arte en cada
+              detalle de tu prÃƒÆ’Ã‚Â³xima experiencia.
             </p>
           </div>
         </div>

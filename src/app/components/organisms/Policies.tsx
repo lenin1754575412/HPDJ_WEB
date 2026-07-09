@@ -12,7 +12,7 @@ const policies = [
     icon: HiClock,
     title: 'Check-out',
     value: '12:00 PM',
-    note: 'Hasta el mediodÃƒÂ­a',
+    note: 'Hasta el mediodÃƒÆ’Ã‚Â­a',
   },
   {
     icon: FaDog,
@@ -29,8 +29,8 @@ const policies = [
   {
     icon: FaMobileAlt,
     title: 'Pagos',
-    value: 'Efectivo Ã‚Â· Yape Ã‚Â· Plin',
-    note: 'Sin tarjeta de crÃƒÂ©dito',
+    value: 'Efectivo Ãƒâ€šÃ‚Â· Yape Ãƒâ€šÃ‚Â· Plin',
+    note: 'Sin tarjeta de crÃƒÆ’Ã‚Â©dito',
   },
   {
     icon: HiCheckCircle,
@@ -52,8 +52,8 @@ export function Policies() {
                 <HiInformationCircle className="text-white" size={20} />
               </div>
               <div>
-                <h3 className="text-[#F2E7D0] font-serif text-2xl">PolÃƒÂ­ticas del hospedaje</h3>
-                <p className="text-[#F2E7D0]/50 text-sm">InformaciÃƒÂ³n importante para tu estadÃƒÂ­a</p>
+                <h3 className="text-[#F2E7D0] font-serif text-2xl">PolÃƒÆ’Ã‚Â­ticas del hospedaje</h3>
+                <p className="text-[#F2E7D0]/50 text-sm">InformaciÃƒÆ’Ã‚Â³n importante para tu estadÃƒÆ’Ã‚Â­a</p>
               </div>
             </div>
 

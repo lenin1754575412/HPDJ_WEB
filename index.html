@@ -18,7 +18,234 @@
       <script type="module" src="/src/main.tsx"></script>
       
     
+
+
+<!-- INICIO-IMAGE-ONLY-START -->
+<script>
+(function () {
+  const NEW_IMAGE = "/hero-pasillo-web.png";
+  const OVERLAY = "linear-gradient(90deg, rgba(0,0,0,.88) 0%, rgba(0,0,0,.68) 42%, rgba(0,0,0,.28) 100%), url('" + NEW_IMAGE + "')";
+
+  function isInicio() {
+    return location.hash.toLowerCase().includes("inicio");
+  }
+
+  function findHero() {
+    const all = Array.from(document.querySelectorAll("section, div, main"));
+
+    const hero = all.find(el => {
+      const txt = (el.innerText || "").toLowerCase();
+      const rect = el.getBoundingClientRect();
+
+      return txt.includes("hospedaje") &&
+             (txt.includes("perú tours") || txt.includes("peru tours")) &&
+             rect.width > window.innerWidth * 0.70 &&
+             rect.height > window.innerHeight * 0.45;
+    });
+
+    return hero || document.querySelector("section:first-of-type");
+  }
+
+  function applyInicioImage() {
+    if (!isInicio()) return;
+
+    const hero = findHero();
+    if (!hero) return;
+
+    hero.style.setProperty("background-image", OVERLAY, "important");
+    hero.style.setProperty("background-size", "cover", "important");
+    hero.style.setProperty("background-position", "center center", "important");
+    hero.style.setProperty("background-repeat", "no-repeat", "important");
+
+    const children = hero.querySelectorAll("div, section");
+    children.forEach(child => {
+      const rect = child.getBoundingClientRect();
+      const bg = getComputedStyle(child).backgroundImage;
+
+      if (rect.width > window.innerWidth * 0.60 && rect.height > window.innerHeight * 0.40 && bg.includes("url")) {
+        child.style.setProperty("background-image", OVERLAY, "important");
+        child.style.setProperty("background-size", "cover", "important");
+        child.style.setProperty("background-position", "center center", "important");
+        child.style.setProperty("background-repeat", "no-repeat", "important");
+      }
+    });
+
+    const imgs = hero.querySelectorAll("img");
+    imgs.forEach(img => {
+      const rect = img.getBoundingClientRect();
+
+      if (rect.width > window.innerWidth * 0.45 && rect.height > window.innerHeight * 0.35) {
+        img.src = NEW_IMAGE;
+        img.style.setProperty("object-fit", "cover", "important");
+        img.style.setProperty("object-position", "center center", "important");
+      }
+    });
+  }
+
+  window.addEventListener("hashchange", () => setTimeout(applyInicioImage, 300));
+  window.addEventListener("load", () => setTimeout(applyInicioImage, 500));
+
+  const observer = new MutationObserver(() => {
+    if (isInicio()) setTimeout(applyInicioImage, 150);
+  });
+
+  function start() {
+    applyInicioImage();
+    observer.observe(document.body, { childList: true, subtree: true });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
+})();
+</script>
+<!-- INICIO-IMAGE-ONLY-END -->
+
+
+
+
+
+<!-- CAFETERIA-SOLO-UNA-START -->
+<style>
+  body.cafe-page-fixed .cafe-hero-fixed {
+    background-image:
+      linear-gradient(90deg, rgba(0,0,0,.88) 0%, rgba(0,0,0,.68) 42%, rgba(0,0,0,.35) 100%),
+      url("/cafeteria-hero-web.png?v=50") !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  body.cafe-page-fixed .cafe-hero-fixed * {
+    background-image: none !important;
+  }
+</style>
+
+<script>
+(function () {
+  function isCafePage() {
+    return location.hash.toLowerCase().includes("cafeteria") ||
+           location.hash.toLowerCase().includes("cafetería");
+  }
+
+  function limpiar() {
+    document.querySelectorAll(".cafe-hero-fixed").forEach(el => {
+      el.classList.remove("cafe-hero-fixed");
+      el.style.removeProperty("background-image");
+      el.style.removeProperty("background-size");
+      el.style.removeProperty("background-position");
+      el.style.removeProperty("background-repeat");
+    });
+
+    document.body.classList.remove("cafe-page-fixed");
+  }
+
+  function buscarHeroCafe() {
+    const titles = Array.from(document.querySelectorAll("h1, h2"));
+
+    const title = titles.find(el => {
+      const txt = (el.textContent || "").toLowerCase().trim();
+      return txt === "cafetería" || txt === "cafeteria";
+    });
+
+    if (!title) return null;
+
+    let el = title;
+
+    while (el && el !== document.body) {
+      const r = el.getBoundingClientRect();
+
+      if (r.width > window.innerWidth * 0.70 && r.height > window.innerHeight * 0.35) {
+        return el;
+      }
+
+      el = el.parentElement;
+    }
+
+    return title.closest("section") || title.parentElement;
+  }
+
+  function aplicar() {
+    limpiar();
+
+    if (!isCafePage()) return;
+
+    document.body.classList.add("cafe-page-fixed");
+
+    const hero = buscarHeroCafe();
+    if (!hero) return;
+
+    hero.classList.add("cafe-hero-fixed");
+
+    hero.style.setProperty(
+      "background-image",
+      'linear-gradient(90deg, rgba(0,0,0,.88) 0%, rgba(0,0,0,.68) 42%, rgba(0,0,0,.35) 100%), url("/cafeteria-hero-web.png?v=50")',
+      "important"
+    );
+
+    hero.style.setProperty("background-size", "cover", "important");
+    hero.style.setProperty("background-position", "center center", "important");
+    hero.style.setProperty("background-repeat", "no-repeat", "important");
+
+    hero.querySelectorAll("img").forEach(img => {
+      const r = img.getBoundingClientRect();
+
+      if (r.width > window.innerWidth * 0.35 && r.height > window.innerHeight * 0.25) {
+        img.style.display = "none";
+      }
+    });
+  }
+
+  window.addEventListener("hashchange", function () {
+    setTimeout(aplicar, 300);
+  });
+
+  window.addEventListener("load", function () {
+    setTimeout(aplicar, 500);
+  });
+
+  const obs = new MutationObserver(function () {
+    if (isCafePage()) setTimeout(aplicar, 150);
+  });
+
+  function start() {
+    aplicar();
+    obs.observe(document.body, { childList: true, subtree: true });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start);
+  } else {
+    start();
+  }
+})();
+</script>
+<!-- CAFETERIA-SOLO-UNA-END -->
+
+
+
+
+
 </body>
   </html>
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

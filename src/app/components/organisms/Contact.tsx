@@ -45,7 +45,7 @@ export function Contact() {
             Cominza tu Aventura
           </h2>
           <p className="text-lg text-[#F2E7D0]/70 max-w-2xl mx-auto leading-relaxed">
-            Estamos listos para hacer realidad el viaje de tus sueños. Contáctanos y te ayudaremos a planificar tu estadía perfecta.
+            Estamos listos para hacer realidad el viaje de tus sueÃ±os. ContÃ¡ctanos y te ayudaremos a planificar tu estadÃ­a perfecta.
           </p>
         </div>
 
@@ -91,7 +91,7 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Ubicación */}
+          {/* UbicaciÃ³n */}
           <div className="group relative">
             <div className="absolute -inset-0.5 bg-gradient-to-r from-[#B58A4F] to-[#D8B17A] rounded-2xl opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500"></div>
             <div className="relative flex flex-col items-center text-center gap-4 p-6 bg-gradient-to-br from-[#2A2520] to-[#1C1815] rounded-2xl border border-[#B58A4F]/20 hover:border-[#B58A4F]/50 transition-all duration-300 hover:-translate-y-1 shadow-xl h-full">
@@ -102,9 +102,9 @@ export function Contact() {
                 </div>
               </div>
               <div>
-                <h4 className="text-[#F2E7D0] font-serif text-lg mb-2">Ubicación</h4>
+                <h4 className="text-[#F2E7D0] font-serif text-lg mb-2">UbicaciÃ³n</h4>
                 <p className="text-[#D8B17A] text-base">Jr. Arequipa 213</p>
-                <p className="text-[#F2E7D0]/60 text-xs mt-2">Celendín, Cajamarca, Perú</p>
+                <p className="text-[#F2E7D0]/60 text-xs mt-2">CelendÃ­n, Cajamarca, PerÃº</p>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@ export function Contact() {
               className="relative bg-gradient-to-br from-[#2A2520] to-[#1C1815] p-8 lg:p-10 rounded-3xl border border-[#B58A4F]/20 shadow-2xl space-y-6"
             >
               <div>
-                <h3 className="text-2xl font-serif text-[#F2E7D0] mb-2">Envíanos un Mensaje</h3>
+                <h3 className="text-2xl font-serif text-[#F2E7D0] mb-2">EnvÃ­anos un Mensaje</h3>
                 <p className="text-[#F2E7D0]/60 text-sm">Completa el formulario y te responderemos pronto</p>
               </div>
 
@@ -149,12 +149,12 @@ export function Contact() {
                     type="text"
                     name="from_name"
                     required
-                    placeholder="Juan Pérez"
+                    placeholder="Juan PÃ©rez"
                     className="w-full px-4 py-3 bg-[#171411]/60 border border-[#B58A4F]/20 rounded-xl text-[#F2E7D0] placeholder-[#F2E7D0]/30 focus:border-[#B58A4F] focus:outline-none focus:ring-2 focus:ring-[#B58A4F]/30 transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-[#F2E7D0] mb-2 text-sm font-medium">Teléfono</label>
+                  <label className="block text-[#F2E7D0] mb-2 text-sm font-medium">TelÃ©fono</label>
                   <input
                     type="tel"
                     name="phone"
@@ -181,7 +181,7 @@ export function Contact() {
                   rows={5}
                   name="message"
                   required
-                  placeholder="Cuéntanos sobre tu viaje ideal, fechas de tu estadía, número de personas..."
+                  placeholder="CuÃ©ntanos sobre tu viaje ideal, fechas de tu estadÃ­a, nÃºmero de personas..."
                   className="w-full px-4 py-3 bg-[#171411]/60 border border-[#B58A4F]/20 rounded-xl text-[#F2E7D0] placeholder-[#F2E7D0]/30 focus:border-[#B58A4F] focus:outline-none focus:ring-2 focus:ring-[#B58A4F]/30 transition-all resize-none"
                 ></textarea>
               </div>
@@ -190,13 +190,13 @@ export function Contact() {
               {status === 'success' && (
                 <div className="flex items-center gap-3 bg-emerald-900/30 border border-emerald-500/30 text-emerald-300 px-4 py-3 rounded-xl text-sm">
                   <FiCheckCircle size={18} />
-                  ¡Mensaje enviado! Te responderemos pronto.
+                  Â¡Mensaje enviado! Te responderemos pronto.
                 </div>
               )}
               {status === 'error' && (
                 <div className="flex items-center gap-3 bg-rose-900/30 border border-rose-500/30 text-rose-300 px-4 py-3 rounded-xl text-sm">
                   <FiAlertCircle size={18} />
-                  Hubo un error al enviar. Intenta de nuevo o escríbenos por WhatsApp.
+                  Hubo un error al enviar. Intenta de nuevo o escrÃ­benos por WhatsApp.
                 </div>
               )}
 
@@ -237,7 +237,7 @@ export function Contact() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Ubicación PERU TOURS HOSPEDAJE"
+                title="UbicaciÃ³n PERU TOURS HOSPEDAJE"
               ></iframe>
             </div>
           </div>

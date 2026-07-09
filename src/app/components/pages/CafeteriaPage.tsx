@@ -7,13 +7,13 @@ const fallback = "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w
 
 const menuCategories = [
   {
-    name: "Cafés",
+    name: "CafÃ©s",
     icon: MdLocalCafe,
     items: [
-      { name: "Café Americano", description: "Café negro suave y aromático", image: "/cafeteria/cafe-americano.jpg" },
+      { name: "CafÃ© Americano", description: "CafÃ© negro suave y aromÃ¡tico", image: "/cafeteria/cafe-americano.jpg" },
       { name: "Capuchino", description: "Espresso con leche espumada", image: "/cafeteria/capuchino.jpg" },
-      { name: "Latte", description: "Café con leche cremosa", image: "/cafeteria/latte.jpg" },
-      { name: "Café Especial", description: "Preparación especial de la casa", image: "/cafeteria/cafe-especial.jpg" },
+      { name: "Latte", description: "CafÃ© con leche cremosa", image: "/cafeteria/latte.jpg" },
+      { name: "CafÃ© Especial", description: "PreparaciÃ³n especial de la casa", image: "/cafeteria/cafe-especial.jpg" },
     ],
   },
   {
@@ -21,17 +21,17 @@ const menuCategories = [
     icon: FaCoffee,
     items: [
       { name: "Chocolate caliente", description: "Cremoso y reconfortante", image: "/cafeteria/chocolate-caliente.jpg" },
-      { name: "Té e Infusiones", description: "Variedad de hierbas y sabores", image: "/cafeteria/te.jpg" },
+      { name: "TÃ© e Infusiones", description: "Variedad de hierbas y sabores", image: "/cafeteria/te.jpg" },
       { name: "Avena caliente", description: "Nutritiva y reconfortante", image: "/cafeteria/avena.jpg" },
-      { name: "Manzanilla", description: "Infusión relajante", image: "/cafeteria/manzanilla.jpg" },
+      { name: "Manzanilla", description: "InfusiÃ³n relajante", image: "/cafeteria/manzanilla.jpg" },
     ],
   },
   {
-    name: "Bebidas frías",
+    name: "Bebidas frÃ­as",
     icon: MdLocalDrink,
     items: [
-      { name: "Bebidas frías", description: "Refrescos y gaseosas heladas", image: "/cafeteria/bebidas-frias.jpg" },
-      { name: "Café frío", description: "Café sobre hielo, refrescante", image: "/cafeteria/cafe-frio.jpg" },
+      { name: "Bebidas frÃ­as", description: "Refrescos y gaseosas heladas", image: "/cafeteria/bebidas-frias.jpg" },
+      { name: "CafÃ© frÃ­o", description: "CafÃ© sobre hielo, refrescante", image: "/cafeteria/cafe-frio.jpg" },
       { name: "Limonada", description: "Fresca y natural", image: "/cafeteria/limonada.jpg" },
     ],
   },
@@ -52,7 +52,7 @@ export function CafeteriaPage() {
         <div className="absolute inset-0">
           <LazyImage
             src="/cafeteria/cafeteria-principal.jpg"
-            alt="Cafetería H Peru Tours"
+            alt="CafeterÃ­a H Peru Tours"
             fallback="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&h=600&fit=crop"
             className="w-full h-full object-cover"
           />
@@ -67,18 +67,18 @@ export function CafeteriaPage() {
           </div>
 
           <h1 className="text-5xl lg:text-6xl font-serif text-[#F2E7D0] mb-6">
-            Cafetería
+            CafeterÃ­a
           </h1>
 
           <p className="text-xl text-[#F2E7D0]/80 max-w-3xl mx-auto leading-relaxed">
-            Disfruta de cafés, bebidas calientes, jugos naturales, postres, sándwiches y deliciosos acompañamientos en un ambiente cómodo, familiar y acogedor.
+            Disfruta de cafÃ©s, bebidas calientes, jugos naturales, postres, sÃ¡ndwiches y deliciosos acompaÃ±amientos en un ambiente cÃ³modo, familiar y acogedor.
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mt-12">
             {[
-              { icon: FaClock, title: "Horario", sub: "Lun – Dom", val: "6:00 AM – 11:00 PM" },
-              { icon: FaCoffee, title: "Cafés y bebidas", sub: "Preparados al momento", val: "con amor" },
-              { icon: FaLeaf, title: "Ambiente familiar", sub: "Espacio cómodo", val: "para compartir" },
+              { icon: FaClock, title: "Horario", sub: "Lun â€“ Dom", val: "6:00 AM â€“ 11:00 PM" },
+              { icon: FaCoffee, title: "CafÃ©s y bebidas", sub: "Preparados al momento", val: "con amor" },
+              { icon: FaLeaf, title: "Ambiente familiar", sub: "Espacio cÃ³modo", val: "para compartir" },
             ].map(({ icon: Icon, title, sub, val }) => (
               <div key={title} className="bg-[#2A2520]/80 backdrop-blur-sm p-6 rounded-xl border border-[#B58A4F]/20">
                 <Icon className="text-[#D8B17A] mx-auto mb-3" size={32} />
@@ -91,11 +91,11 @@ export function CafeteriaPage() {
         </div>
       </section>
 
-      {/* Menú */}
+      {/* MenÃº */}
       <section className="py-24 bg-gradient-to-b from-[#2A2520] to-[#171411]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <span className="text-[#D8B17A] tracking-[0.3em] uppercase text-sm">Nuestro Menú</span>
+            <span className="text-[#D8B17A] tracking-[0.3em] uppercase text-sm">Nuestro MenÃº</span>
             <h2 className="text-4xl lg:text-5xl font-serif text-[#F2E7D0] mt-4">
               Sabores que Inspiran
             </h2>
@@ -170,14 +170,14 @@ export function CafeteriaPage() {
         </div>
       </section>
 
-      {/* Sección inferior */}
+      {/* SecciÃ³n inferior */}
       <section className="py-24 bg-[#2A2520]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#B58A4F]/20 h-96">
               <LazyImage
                 src="/cafeteria/cafeteria-ambiente.jpg"
-                alt="Ambiente Cafetería"
+                alt="Ambiente CafeterÃ­a"
                 fallback="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop"
                 className="w-full h-full object-cover"
               />
@@ -186,14 +186,14 @@ export function CafeteriaPage() {
             <div className="space-y-6">
               <span className="text-[#D8B17A] tracking-[0.3em] uppercase text-sm">Un lugar especial</span>
               <h2 className="text-4xl lg:text-5xl font-serif text-[#F2E7D0]">
-                Café y Tradición
+                CafÃ© y TradiciÃ³n
               </h2>
               <p className="text-[#F2E7D0]/70 text-lg leading-relaxed">
-                Nuestra cafetería ofrece un ambiente tranquilo y acogedor donde puedes disfrutar de una buena taza de café, jugos naturales, postres artesanales y sándwiches frescos, ideales para comenzar el día o disfrutar en cualquier momento.
+                Nuestra cafeterÃ­a ofrece un ambiente tranquilo y acogedor donde puedes disfrutar de una buena taza de cafÃ©, jugos naturales, postres artesanales y sÃ¡ndwiches frescos, ideales para comenzar el dÃ­a o disfrutar en cualquier momento.
               </p>
               <ul className="space-y-3">
                 {[
-                  "Cafés preparados al momento",
+                  "CafÃ©s preparados al momento",
                   "Jugos y batidos naturales",
                   "Postres y dulces artesanales",
                   "Desayunos completos",

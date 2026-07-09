@@ -22,9 +22,9 @@ export function Footer() {
     { name: "Inicio", path: "/inicio" },
     { name: "Habitaciones", path: "/habitaciones" },
     { name: "Tours", path: "/tours" },
-    { name: "Galería", path: "/galeria" },
+    { name: "GalerÃ­a", path: "/galeria" },
     { name: "Nosotros", path: "/nosotros" },
-    { name: "Cafetería", path: "/cafeteria" },
+    { name: "CafeterÃ­a", path: "/cafeteria" },
     { name: "Contacto", path: "/contacto" },
   ];
 
@@ -44,14 +44,14 @@ export function Footer() {
               />
             </Link>
             <p className="text-[#F2E7D0]/70 text-sm leading-relaxed">
-              Creando experiencias inolvidables en el corazón
-              del Perú desde hace más de 10 años.
+              Creando experiencias inolvidables en el corazÃ³n
+              del PerÃº desde hace mÃ¡s de 10 aÃ±os.
             </p>
           </div>
 
           <div>
             <h4 className="text-[#D8B17A] font-serif mb-4">
-              Enlaces Rápidos
+              Enlaces RÃ¡pidos
             </h4>
             <ul className="space-y-2">
               {links.map((link) => (
@@ -75,7 +75,7 @@ export function Footer() {
               {[
                 "Mirador Cristo Redentor",
                 "Velo de la Novia",
-                "Baños Termales de Jeres/Huasmín",
+                "BaÃ±os Termales de Jeres/HuasmÃ­n",
                 "Aguas Termales de Llanguat",
                 "Cataratas el Cornello",
                 "Laguna de Sorococha",
@@ -108,7 +108,7 @@ export function Footer() {
                     Jr. Arequipa 213
                   </p>
                   <p className="text-[#F2E7D0]/70 text-sm">
-                    Celendín
+                    CelendÃ­n
                   </p>
                 </div>
               </li>
@@ -169,7 +169,7 @@ export function Footer() {
 
         <div className="border-t border-[#B58A4F]/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[#F2E7D0]/60 text-sm">
-            © 2026 H PERU TOURS. Todos los derechos reservados.
+            Â© 2026 H PERU TOURS. Todos los derechos reservados.
           </p>
 
           <div className="flex gap-4">
@@ -188,7 +188,7 @@ export function Footer() {
               {
                 Icon: FaWhatsapp,
                 href: `https://wa.me/51900245939?text=${encodeURIComponent(
-                  "Hola, me gustaría que me brindaran información de sus habitaciones libres",
+                  "Hola, me gustarÃ­a que me brindaran informaciÃ³n de sus habitaciones libres",
                 )}`,
                 label: "WhatsApp",
               },

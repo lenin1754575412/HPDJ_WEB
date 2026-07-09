@@ -13,7 +13,7 @@ interface RoomCardProps {
 }
 
 export function RoomCard({ image, title, capacity, size, price, roomNumber, services = [] }: RoomCardProps) {
-  const whatsappMsg = `Hola, quiero reservar una ${title} (${roomNumber}). ¿Pueden confirmar disponibilidad y precio?`;
+  const whatsappMsg = `Hola, quiero reservar una ${title} (${roomNumber}). Â¿Pueden confirmar disponibilidad y precio?`;
 
   return (
     <div className="group relative flex flex-col">
@@ -29,7 +29,7 @@ export function RoomCard({ image, title, capacity, size, price, roomNumber, serv
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#171411]/80 via-transparent to-transparent"></div>
 
-          {/* Número de habitación */}
+          {/* NÃºmero de habitaciÃ³n */}
           <div className="absolute top-2 left-2">
             <span className="text-xs font-medium px-2 py-1 rounded-full backdrop-blur-md bg-[#171411]/80 text-[#D8B17A] border border-[#B58A4F]/40">
               {roomNumber}
@@ -64,7 +64,7 @@ export function RoomCard({ image, title, capacity, size, price, roomNumber, serv
             </ul>
           )}
 
-          {/* Botón reservar */}
+          {/* BotÃ³n reservar */}
           <div className="mt-auto pt-3 border-t border-[#B58A4F]/15">
             <a
               href={`https://wa.me/51900245939?text=${encodeURIComponent(whatsappMsg)}`}

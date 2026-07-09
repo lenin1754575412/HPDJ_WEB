@@ -1,243 +1,177 @@
 import { useState } from "react";
 import { RoomCard } from "../molecules/RoomCard";
 
+type RoomFilter = "Todas" | "Individual" | "Doble" | "Matrimonial" | "Multiple";
+
+const filters: { label: string; value: RoomFilter }[] = [
+  { label: "Todas", value: "Todas" },
+  { label: "Individual", value: "Individual" },
+  { label: "Doble", value: "Doble" },
+  { label: "Matrimonial", value: "Matrimonial" },
+  { label: "M\u00faltiple", value: "Multiple" },
+];
+
 const rooms = [
   {
-    image:
-      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n Individual",
-    capacity: "1 persona",
-    size: "18 mÃ‚Â²",
-    price: "S/. 60",
-    services: [
-      "Cama individual",
-      "BaÃƒÂ±o privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    image: "/habitaciones/hab-01.png",
+    title: "Habitaci\u00f3n Matrimonial",
+    capacity: "2 personas",
+    size: "12 m\u00b2",
+    price: "S/. 80",
+    services: ["Cama matrimonial", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 01",
-    type: "Individual",
+    type: "Matrimonial",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n Individual",
-    capacity: "1 persona",
-    size: "18 mÃ‚Â²",
-    price: "S/. 60",
-    services: [
-      "Cama individual",
-      "BaÃƒÂ±o privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    image: "/habitaciones/hab-02.png",
+    title: "Habitaci\u00f3n Doble",
+    capacity: "2 personas",
+    size: "15 m\u00b2",
+    price: "S/. 90",
+    services: ["Cama doble", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 02",
-    type: "Individual",
+    type: "Doble",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n Individual",
+    image: "/habitaciones/hab-03.png",
+    title: "Habitaci\u00f3n Individual",
     capacity: "1 persona",
-    size: "18 mÃ‚Â²",
+    size: "8 m\u00b2",
     price: "S/. 60",
-    services: [
-      "Cama individual",
-      "BaÃƒÂ±o privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    services: ["Cama individual", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 03",
     type: "Individual",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n Doble",
-    capacity: "2 personas",
-    size: "24 mÃ‚Â²",
-    price: "S/. 90",
-    services: [
-      "2 camas individuales",
-      "BaÃƒÂ±o privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    image: "/habitaciones/hab-04.png",
+    title: "Habitaci\u00f3n M\u00faltiple",
+    capacity: "3 - 5 personas",
+    size: "29 m\u00b2",
+    price: "S/. 140",
+    services: ["Varias camas c\u00f3modas", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 04",
-    type: "Doble",
+    type: "Multiple",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n Doble",
+    image: "/habitaciones/hab-05.png",
+    title: "Habitaci\u00f3n Doble",
     capacity: "2 personas",
-    size: "24 mÃ‚Â²",
+    size: "15 m\u00b2",
     price: "S/. 90",
-    services: [
-      "2 camas individuales",
-      "BaÃƒÂ±o privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    services: ["Cama doble", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 05",
     type: "Doble",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n Doble",
+    image: "/habitaciones/hab-06.png",
+    title: "Habitaci\u00f3n Matrimonial",
     capacity: "2 personas",
-    size: "24 mÃ‚Â²",
-    price: "S/. 90",
-    services: [
-      "2 camas individuales",
-      "BaÃƒÂ±o privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    size: "11.5 m\u00b2",
+    price: "S/. 80",
+    services: ["Cama matrimonial", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 06",
-    type: "Doble",
+    type: "Matrimonial",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n Matrimonial",
+    image: "/habitaciones/hab-07.png",
+    title: "Habitaci\u00f3n Matrimonial",
     capacity: "2 personas",
-    size: "28 mÃ‚Â²",
-    price: "S/. 100",
-    services: [
-      "Cama matrimonial",
-      "BaÃƒÂ±o privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    size: "10 m\u00b2",
+    price: "S/. 80",
+    services: ["Cama matrimonial", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 07",
     type: "Matrimonial",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n Matrimonial",
+    image: "/habitaciones/hab-08.png",
+    title: "Habitaci\u00f3n Matrimonial",
     capacity: "2 personas",
-    size: "28 mÃ‚Â²",
-    price: "S/. 100",
-    services: [
-      "Cama matrimonial",
-      "BaÃƒÂ±o privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    size: "10 m\u00b2",
+    price: "S/. 80",
+    services: ["Cama matrimonial", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 08",
     type: "Matrimonial",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n Matrimonial",
+    image: "/habitaciones/hab-09.png",
+    title: "Habitaci\u00f3n Doble",
     capacity: "2 personas",
-    size: "28 mÃ‚Â²",
-    price: "S/. 100",
-    services: [
-      "Cama matrimonial",
-      "BaÃƒÂ±o privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    size: "15 m\u00b2",
+    price: "S/. 90",
+    services: ["Cama doble", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 09",
+    type: "Doble",
+  },
+  {
+    image: "/habitaciones/hab-10.png",
+    title: "Habitaci\u00f3n Matrimonial",
+    capacity: "2 personas",
+    size: "10 m\u00b2",
+    price: "S/. 80",
+    services: ["Cama matrimonial", "Sin ba\u00f1o", "WiFi gratuito", "Agua caliente 24h"],
+    roomNumber: "Hab. 10",
     type: "Matrimonial",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n MÃƒÂºltiple",
-    capacity: "3-5 personas",
-    size: "36 mÃ‚Â²",
-    price: "S/. 140",
-    services: [
-      "Camas mÃƒÂºltiples",
-      "BaÃƒÂ±o privado amplio",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
-    roomNumber: "Hab. 10",
-    type: "Multiple",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n MÃƒÂºltiple",
-    capacity: "3-5 personas",
-    size: "36 mÃ‚Â²",
-    price: "S/. 140",
-    services: [
-      "Camas mÃƒÂºltiples",
-      "BaÃƒÂ±o privado amplio",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    image: "/habitaciones/hab-11.png",
+    title: "Habitaci\u00f3n M\u00faltiple",
+    capacity: "3 - 5 personas",
+    size: "25 m\u00b2",
+    price: "S/. 130",
+    services: ["Varias camas c\u00f3modas", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 11",
     type: "Multiple",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop",
-    title: "HabitaciÃƒÂ³n MÃƒÂºltiple",
-    capacity: "3-5 personas",
-    size: "36 mÃ‚Â²",
-    price: "S/. 140",
-    services: [
-      "Camas mÃƒÂºltiples",
-      "BaÃƒÂ±o privado amplio",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    image: "/habitaciones/hab-12.png",
+    title: "Habitaci\u00f3n Individual",
+    capacity: "1 persona",
+    size: "5 m\u00b2",
+    price: "S/. 50",
+    services: ["Cama individual", "Sin ba\u00f1o", "WiFi gratuito", "Agua caliente 24h"],
     roomNumber: "Hab. 12",
-    type: "Multiple",
+    type: "Individual",
   },
 ];
 
 export function Rooms() {
-  const [filter, setFilter] = useState("Todas");
+  const [filter, setFilter] = useState<RoomFilter>("Todas");
 
   const filteredRooms =
-    filter === "Todas"
-      ? rooms
-      : rooms.filter((r) => r.type === filter);
+    filter === "Todas" ? rooms : rooms.filter((room) => room.type === filter);
 
   return (
-    <section
-      id="habitaciones"
-      className="py-20 bg-gradient-to-b from-[#171411] via-[#1C1815] to-[#171411]"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <h2 className="text-4xl lg:text-5xl font-serif text-[#F2E7D0] mt-4 mb-4">
+    <section className="relative bg-[#120f0c] px-6 py-24">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-14 text-center">
+          <p className="mb-4 text-sm font-bold uppercase tracking-[0.35em] text-[#D8B17A]">
+            Habitaciones
+          </p>
+          <h2 className="mb-4 font-serif text-5xl font-bold text-[#F7EAD2]">
             Comodidad para Todos
           </h2>
-
-          <div className="flex flex-wrap justify-center gap-2 mt-8">
-            {[
-              "Todas",
-              "Individual",
-              "Doble",
-              "Matrimonial",
-              "Multiple",
-            ].map((type) => (
-              <button
-                key={type}
-                onClick={() => setFilter(type)}
-                className={`px-5 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 ${filter === type
-                    ? "bg-gradient-to-r from-[#B58A4F] to-[#D8B17A] text-white shadow-lg shadow-[#B58A4F]/30 scale-105"
-                    : "border border-[#B58A4F]/30 text-[#F2E7D0] hover:bg-[#B58A4F]/10 bg-[#171411]/40 backdrop-blur-sm"
-                  }`}
-              >
-                {type}
-              </button>
-            ))}
-          </div>
+          <p className="mx-auto max-w-2xl text-lg text-[#F2E7D0]/75">
+            Elige la habitaci\u00f3n ideal para tu descanso con atenci\u00f3n c\u00e1lida y servicios pensados para tu comodidad.
+          </p>
         </div>
 
-        <div className="grid grid-cols-1dia md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="mb-14 flex flex-wrap justify-center gap-4">
+          {filters.map((item) => (
+            <button
+              key={item.value}
+              onClick={() => setFilter(item.value)}
+              className={`rounded-xl px-7 py-4 text-base font-bold transition-all duration-300 ${
+                filter === item.value
+                  ? "scale-105 bg-gradient-to-r from-[#B58A4F] to-[#D8B17A] text-white shadow-lg shadow-[#B58A4F]/30"
+                  : "border border-[#B58A4F]/30 bg-[#171411]/70 text-[#F2E7D0] hover:bg-[#B58A4F]/10"
+              }`}
+            >
+              {item.label}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
           {filteredRooms.map((room) => (
             <RoomCard key={room.roomNumber} {...room} />
           ))}

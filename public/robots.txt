@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://hospedaje-peru-tours-celendin.vercel.app/sitemap.xml
+Sitemap: https://hospedaje-peru-tours.vercel.app/sitemap.xml

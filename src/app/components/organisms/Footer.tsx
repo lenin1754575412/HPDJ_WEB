@@ -22,9 +22,9 @@ export function Footer() {
     { name: "Inicio", path: "/inicio" },
     { name: "Habitaciones", path: "/habitaciones" },
     { name: "Tours", path: "/tours" },
-    { name: "GalerÃ­a", path: "/galeria" },
+    { name: "GalerÃƒÂ­a", path: "/galeria" },
     { name: "Nosotros", path: "/nosotros" },
-    { name: "CafeterÃ­a", path: "/cafeteria" },
+    { name: "CafeterÃƒÂ­a", path: "/cafeteria" },
     { name: "Contacto", path: "/contacto" },
   ];
 
@@ -44,14 +44,14 @@ export function Footer() {
               />
             </Link>
             <p className="text-[#F2E7D0]/70 text-sm leading-relaxed">
-              Creando experiencias inolvidables en el corazÃ³n
-              del PerÃº desde hace mÃ¡s de 10 aÃ±os.
+              Creando experiencias inolvidables en el corazÃƒÂ³n
+              del PerÃƒÂº desde hace mÃƒÂ¡s de 10 aÃƒÂ±os.
             </p>
           </div>
 
           <div>
             <h4 className="text-[#D8B17A] font-serif mb-4">
-              Enlaces RÃ¡pidos
+              Enlaces RÃƒÂ¡pidos
             </h4>
             <ul className="space-y-2">
               {links.map((link) => (
@@ -75,7 +75,7 @@ export function Footer() {
               {[
                 "Mirador Cristo Redentor",
                 "Velo de la Novia",
-                "BaÃ±os Termales de Jeres/HuasmÃ­n",
+                "BaÃƒÂ±os Termales de Jeres/HuasmÃƒÂ­n",
                 "Aguas Termales de Llanguat",
                 "Cataratas el Cornello",
                 "Laguna de Sorococha",
@@ -108,7 +108,7 @@ export function Footer() {
                     Jr. Arequipa 213
                   </p>
                   <p className="text-[#F2E7D0]/70 text-sm">
-                    CelendÃ­n
+                    CelendÃƒÂ­n
                   </p>
                 </div>
               </li>
@@ -169,7 +169,7 @@ export function Footer() {
 
         <div className="border-t border-[#B58A4F]/20 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[#F2E7D0]/60 text-sm">
-            Â© 2026 H PERU TOURS. Todos los derechos reservados.
+            Ã‚Â© 2026 H PERU TOURS. Todos los derechos reservados.
           </p>
 
           <div className="flex gap-4">
@@ -188,7 +188,7 @@ export function Footer() {
               {
                 Icon: FaWhatsapp,
                 href: `https://wa.me/51900245939?text=${encodeURIComponent(
-                  "Hola, me gustarÃ­a que me brindaran informaciÃ³n de sus habitaciones libres",
+                  "Hola, me gustarÃƒÂ­a que me brindaran informaciÃƒÂ³n de sus habitaciones libres",
                 )}`,
                 label: "WhatsApp",
               },

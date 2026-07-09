@@ -32,10 +32,10 @@ export function ServiceCard({ icon: Icon, title, description }: ServiceCardProps
             {description}
           </p>
 
-          {/* DecoraciÃ³n inferior */}
+          {/* DecoraciÃƒÂ³n inferior */}
           <div className="mt-6 pt-6 border-t border-[#B58A4F]/20">
             <div className="flex items-center gap-2 text-[#D8B17A] text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <span>Descubre mÃ¡s</span>
+              <span>Descubre mÃƒÂ¡s</span>
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>

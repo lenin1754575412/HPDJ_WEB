@@ -39,7 +39,7 @@ export function AboutPage() {
             <p className="mt-8 text-[#F2E7D0]/75 text-lg leading-8 max-w-2xl">
               Conoce nuestra historia, los valores que nos representan
               y el compromiso que tenemos para ofrecer experiencias
-              memorables en cada estadÃ­a.
+              memorables en cada estadÃƒÂ­a.
             </p>
           </div>
         </div>

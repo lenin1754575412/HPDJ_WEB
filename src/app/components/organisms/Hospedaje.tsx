@@ -6,10 +6,10 @@ export function Hospedaje() {
   const benefits = [
     { icon: HiWifi, text: 'WiFi de alta velocidad' },
     { icon: FaCoffee, text: 'Desayuno gourmet incluido' },
-    { icon: FaUtensils, text: 'CafeterÃ­a y snacks' },
+    { icon: FaUtensils, text: 'CafeterÃƒÂ­a y snacks' },
     { icon: FaDumbbell, text: 'Gimnasio y spa' },
     { icon: FaWind, text: 'Aire acondicionado' },
-    { icon: FaCheck, text: 'Servicio de conserjerÃ­a 24/7' },
+    { icon: FaCheck, text: 'Servicio de conserjerÃƒÂ­a 24/7' },
   ];
 
   return (

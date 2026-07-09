@@ -13,7 +13,7 @@ const filters: { label: string; value: RoomFilter }[] = [
 
 const rooms = [
   {
-    image: "/habitaciones/hab-01.png",
+    image: "/habitaciones/habitacion1.webp",
     title: "Habitaci\u00f3n Matrimonial",
     capacity: "2 personas",
     size: "12 m\u00b2",
@@ -22,7 +22,7 @@ const rooms = [
     services: ["Cama Matrimonial", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
   },
   {
-    image: "/habitaciones/hab-02.png",
+    image: "/habitaciones/habitacion2.webp",
     title: "Habitaci\u00f3n Doble",
     capacity: "2 personas",
     size: "15 m\u00b2",
@@ -31,7 +31,7 @@ const rooms = [
     services: ["Cama Doble", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
   },
   {
-    image: "/habitaciones/hab-04.png",
+    image: "/habitaciones/habitacion4.webp",
     title: "Habitaci\u00f3n M\u00faltiple",
     capacity: "3 - 5 personas",
     size: "29 m\u00b2",
@@ -40,7 +40,7 @@ const rooms = [
     services: ["Varias camas c\u00f3modas", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
   },
   {
-    image: "/habitaciones/hab-06.png",
+    image: "/habitaciones/habitacion6.webp",
     title: "Habitaci\u00f3n Matrimonial",
     capacity: "2 personas",
     size: "11,5 m\u00b2",
@@ -49,7 +49,7 @@ const rooms = [
     services: ["Cama matrimonial", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
   },
   {
-    image: "/habitaciones/hab-07.png",
+    image: "/habitaciones/habitacion7.webp",
     title: "Habitaci\u00f3n Matrimonial",
     capacity: "2 personas",
     size: "10 m\u00b2",
@@ -58,7 +58,7 @@ const rooms = [
     services: ["Cama matrimonial", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
   },
   {
-    image: "/habitaciones/hab-08.png",
+    image: "/habitaciones/habitacion8.webp",
     title: "Habitaci\u00f3n Matrimonial",
     capacity: "2 personas",
     size: "10 m\u00b2",
@@ -67,7 +67,7 @@ const rooms = [
     services: ["Cama matrimonial", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
   },
   {
-    image: "/habitaciones/hab-10.png",
+    image: "/habitaciones/habitacion10.webp",
     title: "Habitaci\u00f3n Matrimonial",
     capacity: "2 personas",
     size: "10 m\u00b2",
@@ -76,7 +76,7 @@ const rooms = [
     services: ["Cama matrimonial", "Sin ba\u00f1o", "WiFi gratuito", "Agua caliente 24h"],
   },
   {
-    image: "/habitaciones/hab-11.png",
+    image: "/habitaciones/habitacion11.webp",
     title: "Habitaci\u00f3n M\u00faltiple",
     capacity: "3 - 5 personas",
     size: "25 m\u00b2",
@@ -85,7 +85,7 @@ const rooms = [
     services: ["Varias camas c\u00f3modas", "Ba\u00f1o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
   },
   {
-    image: "/habitaciones/hab-12.png",
+    image: "/habitaciones/habitacion12.webp",
     title: "Habitaci\u00f3n Individual",
     capacity: "1 persona",
     size: "5 m\u00b2",

@@ -39,8 +39,8 @@ export function RoomCard({
         </h3>
 
         <div className="mb-5 flex flex-wrap gap-5 text-sm font-semibold text-[#D8B17A]">
-          <span>👥 {capacity}</span>
-          <span>📐 {size}</span>
+          <span>{capacity}</span>
+          <span>{size}</span>
         </div>
 
         <ul className="mb-7 space-y-3">

@@ -103,7 +103,7 @@ export function Rooms() {
             Comodidad para Todos
           </h2>
           <p className="mx-auto max-w-2xl text-lg text-[#F2E7D0]/75">
-            Elige la habitacion ideal para tu descanso.
+            Elige la habitacion ideal para tu estadia en Celendin. Ambientes comodos, atencion calida y servicios pensados para tu descanso.
           </p>
         </div>
 

@@ -1,79 +1,79 @@
-import { useMemo, useState } from "react";
+﻿import { useMemo, useState } from "react";
 
-type Category = "Todas" | "Individual" | "Doble" | "Matrimonial" | "M\u00faltiple";
+type Category = "Todas" | "Individual" | "Doble" | "Matrimonial" | "MÃºltiple";
 
-const filters: Category[] = ["Todas", "Individual", "Doble", "Matrimonial", "M\u00faltiple"];
+const filters: Category[] = ["Todas", "Individual", "Doble", "Matrimonial", "MÃºltiple"];
 
 const rooms = [
   {
     number: "01",
-    category: "Matrimonial" as Category,
+    category: "Matrimonial",
     image: "/habitaciones/habitacion1.webp",
     people: "2 personas",
-    features: ["1 cama de 2 plazas", "Ba\u00f1o propio", "Cable y WiFi"],
+    features: ["1 cama de 2 plazas", "BaÃ±o propio", "Cable y WiFi"],
   },
   {
     number: "02",
-    category: "Doble" as Category,
+    category: "Doble",
     image: "/habitaciones/habitacion2.webp",
     people: "2 personas",
-    features: ["2 camas de 1 1/2 plaza", "Ba\u00f1o propio", "Cable y WiFi"],
+    features: ["2 camas de 1 1/2 plaza", "BaÃ±o propio", "Cable y WiFi"],
   },
   {
     number: "04",
-    category: "M\u00faltiple" as Category,
+    category: "MÃºltiple",
     image: "/habitaciones/habitacion4.webp",
     people: "5 personas",
-    features: ["5 camas de 1 1/2 plaza", "Ba\u00f1o propio", "Cable y WiFi"],
+    features: ["5 camas de 1 1/2 plaza", "BaÃ±o propio", "Cable y WiFi"],
   },
   {
     number: "06",
-    category: "Matrimonial" as Category,
+    category: "Matrimonial",
     image: "/habitaciones/habitacion6.webp",
     people: "2 personas",
-    features: ["1 cama de 2 plazas", "Ba\u00f1o propio", "Cable y WiFi"],
+    features: ["1 cama de 2 plazas", "BaÃ±o propio", "Cable y WiFi"],
   },
   {
     number: "07",
-    category: "Matrimonial" as Category,
+    category: "Matrimonial",
     image: "/habitaciones/habitacion7.webp",
     people: "2 personas",
-    features: ["1 cama de 2 plazas", "Ba\u00f1o propio", "Cable y WiFi"],
+    features: ["1 cama de 2 plazas", "BaÃ±o propio", "Cable y WiFi"],
   },
   {
     number: "08",
-    category: "Matrimonial" as Category,
+    category: "Matrimonial",
     image: "/habitaciones/habitacion10.webp",
     people: "2 personas",
-    features: ["1 cama de 2 plazas", "Ba\u00f1o propio", "Cable y WiFi"],
+    features: ["1 cama de 2 plazas", "BaÃ±o propio", "Cable y WiFi"],
   },
   {
     number: "09",
-    category: "Individual" as Category,
+    category: "Individual",
     image: "/habitaciones/habitacion11.webp",
     people: "1 persona",
-    features: ["1 cama de 1 1/2 plaza", "Ba\u00f1o compartido", "Cable y WiFi"],
+    features: ["1 cama de 1 1/2 plaza", "BaÃ±o compartido", "Cable y WiFi"],
   },
   {
     number: "10",
-    category: "Matrimonial" as Category,
+    category: "Matrimonial",
     image: "/habitaciones/habitacion12.webp",
     people: "2 personas",
-    features: ["1 cama de 2 plazas", "Ba\u00f1o compartido", "Cable y WiFi"],
+    features: ["1 cama de 2 plazas", "BaÃ±o compartido", "Cable y WiFi"],
   },
   {
     number: "11",
-    category: "M\u00faltiple" as Category,
+    category: "MÃºltiple",
     image: "/habitaciones/habitacion10.webp",
     people: "4 personas",
-    features: ["3 camas de 1 1/2 plaza", "1 cama de 2 plazas", "Ba\u00f1o propio", "Cable y WiFi"],
+    features: ["3 camas de 1 1/2 plaza", "1 cama de 2 plazas", "BaÃ±o propio", "Cable y WiFi"],
   },
   {
     number: "12",
-    category: "Individual" as Category,
+    category: "Individual",
     image: "/habitaciones/habitacion12.webp",
     people: "1 persona",
-    features: ["1 cama de 1 1/2 plaza", "Ba\u00f1o compartido", "Cable y WiFi"],
+    features: ["1 cama de 1 1/2 plaza", "BaÃ±o compartido", "Cable y WiFi"],
   },
 ];
 
@@ -90,15 +90,16 @@ export function RoomsPage() {
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 text-center">
           <p className="mb-3 text-[11px] font-bold uppercase tracking-[0.32em] text-[#D8B17A]">
-            {"Habitaciones disponibles"}
+            Habitaciones disponibles
           </p>
 
           <h1 className="font-serif text-3xl font-bold md:text-4xl">
-            {"Habitaciones"}
+            Habitaciones
           </h1>
 
           <p className="mx-auto mt-3 max-w-3xl text-sm text-[#F2E7D0]/75 md:text-base">
-            {"Hospedaje Per\u00fa Tours - Jr. Arequipa N\u00b0 213, Celend\u00edn, Cajamarca. Tel\u00e9fono: 976017025."}
+            Hospedaje PerÃº Tours - Jr. Arequipa NÂ° 213, CelendÃ­n, Cajamarca.
+            TelÃ©fono: 976017025.
           </p>
         </div>
 
@@ -127,7 +128,7 @@ export function RoomsPage() {
               <div className="relative h-56 overflow-hidden">
                 <img
                   src={room.image}
-                  alt={`Habitacion ${room.number}`}
+                  alt={`HabitaciÃ³n ${room.number}`}
                   className="h-full w-full object-cover transition-all duration-700 group-hover:scale-110"
                 />
 
@@ -137,19 +138,19 @@ export function RoomsPage() {
               </div>
 
               <div className="p-5">
-                <h2 className="font-serif text-[1.05rem] font-semibold leading-tight text-[#FFF3DF] md:text-[1.2rem]">
-                  {"Habitaci\u00f3n"} {room.category}
+                <h2 className="font-serif text-[1.05rem] md:text-[1.2rem] font-semibold leading-tight text-[#FFF3DF]">
+                  HabitaciÃ³n {room.category}
                 </h2>
 
                 <p className="mt-2 text-[0.95rem] font-semibold text-[#D8B17A]">
-                  {room.people}
+                  ðŸ‘¥ {room.people}
                 </p>
 
                 <ul className="mt-5 space-y-2 text-[0.95rem] font-medium text-[#F2E7D0]">
                   {room.features.map((feature) => (
                     <li key={feature} className="flex items-center gap-3">
                       <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#D8B17A] text-[10px] font-bold text-[#15110d]">
-                        ✓
+                        âœ“
                       </span>
                       {feature}
                     </li>
@@ -157,12 +158,12 @@ export function RoomsPage() {
                 </ul>
 
                 <a
-                  href={`https://wa.me/51976017025?text=Hola, quiero consultar disponibilidad de la Habitacion ${room.number}`}
+                  href={`https://wa.me/51976017025?text=Hola, quiero consultar disponibilidad de la HabitaciÃ³n ${room.number}`}
                   target="_blank"
                   rel="noreferrer"
                   className="mt-7 flex w-full items-center justify-center rounded-xl bg-gradient-to-r from-[#C4934F] to-[#E3B76E] px-5 py-3 text-[0.95rem] font-semibold text-white shadow-lg transition-all duration-300 hover:scale-105"
                 >
-                  {"Reservar ahora"}
+                  Reservar ahora
                 </a>
               </div>
             </article>
@@ -170,12 +171,12 @@ export function RoomsPage() {
         </div>
 
         <div className="mt-10 rounded-2xl border border-[#B58A4F]/35 bg-[#15110d] p-6 text-center shadow-xl">
-          <h2 className="font-serif text-2xl font-bold text-[#D8B17A]">
-            {"Cochera"}
+          <h2 className="font-serif text-[1.05rem] md:text-[1.2rem] font-semibold leading-tight text-[#D8B17A]">
+            Cochera
           </h2>
 
           <p className="mt-2 text-sm text-[#F2E7D0]/80">
-            {"Disponible para motos y camionetas."}
+            Disponible para motos y camionetas.
           </p>
         </div>
       </div>

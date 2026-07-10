@@ -1,0 +1,169 @@
+import { useMemo, useState } from "react";
+import { RoomCard } from "../molecules/RoomCard";
+import type { Room } from "../molecules/RoomCard";
+
+const rooms: Room[] = [
+  {
+    roomNumber: "01",
+    title: "HabitaciÃ³n Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "12 m2",
+    image: "/habitaciones/habitacion1.webp",
+    features: ["Cama matrimonial", "BaÃ±o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "02",
+    title: "HabitaciÃ³n Doble",
+    type: "Doble",
+    people: "2 personas",
+    size: "15 m2",
+    image: "/habitaciones/habitacion2.webp",
+    features: ["Cama doble", "BaÃ±o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "03",
+    title: "HabitaciÃ³n Individual",
+    type: "Individual",
+    people: "1 persona",
+    size: "8 m2",
+    image: "/habitaciones/habitacion10.webp",
+    features: ["Cama individual", "WiFi gratuito", "Agua caliente 24h", "Ambiente cÃ³modo"],
+  },
+  {
+    roomNumber: "04",
+    title: "HabitaciÃ³n MÃºltiple",
+    type: "MÃºltiple",
+    people: "3 - 5 personas",
+    size: "29 m2",
+    image: "/habitaciones/habitacion4.webp",
+    features: ["Varias camas cÃ³modas", "BaÃ±o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "05",
+    title: "HabitaciÃ³n Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "11,5 m2",
+    image: "/habitaciones/habitacion6.webp",
+    features: ["Cama matrimonial", "BaÃ±o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "06",
+    title: "HabitaciÃ³n Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "11,5 m2",
+    image: "/habitaciones/habitacion6.webp",
+    features: ["Cama matrimonial", "BaÃ±o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "07",
+    title: "HabitaciÃ³n Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "10 m2",
+    image: "/habitaciones/habitacion7.webp",
+    features: ["Cama matrimonial", "BaÃ±o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "08",
+    title: "HabitaciÃ³n Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "10 m2",
+    image: "/habitaciones/habitacion6.webp",
+    features: ["Cama matrimonial", "BaÃ±o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "09",
+    title: "HabitaciÃ³n Doble",
+    type: "Doble",
+    people: "2 personas",
+    size: "15 m2",
+    image: "/habitaciones/habitacion2.webp",
+    features: ["Cama doble", "BaÃ±o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "10",
+    title: "HabitaciÃ³n Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "10 m2",
+    image: "/habitaciones/habitacion10.webp",
+    features: ["Cama matrimonial", "Sin baÃ±o", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "11",
+    title: "HabitaciÃ³n MÃºltiple",
+    type: "MÃºltiple",
+    people: "3 - 5 personas",
+    size: "25 m2",
+    image: "/habitaciones/habitacion11.webp",
+    features: ["Varias camas cÃ³modas", "BaÃ±o privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "12",
+    title: "HabitaciÃ³n Individual",
+    type: "Individual",
+    people: "1 persona",
+    size: "5 m2",
+    image: "/habitaciones/habitacion12.webp",
+    features: ["Cama individual", "Sin baÃ±o", "WiFi gratuito", "Agua caliente 24h"],
+  },
+];
+
+const filters = ["Todas", "Individual", "Doble", "Matrimonial", "MÃºltiple"];
+
+export function RoomsPage() {
+  const [activeFilter, setActiveFilter] = useState("Todas");
+
+  const filteredRooms = useMemo(() => {
+    if (activeFilter === "Todas") return rooms;
+    return rooms.filter((room) => room.type === activeFilter);
+  }, [activeFilter]);
+
+  return (
+    <section className="min-h-screen bg-[#100d0a] px-5 py-24 text-[#F2E7D0]">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-14 text-center">
+          <span className="mb-5 inline-flex rounded-full border border-[#B58A4F]/40 px-6 py-2 text-sm font-bold uppercase tracking-[0.45em] text-[#D8B17A]">
+            Habitaciones
+          </span>
+
+          <h1 className="mb-6 font-serif text-5xl font-bold text-[#FFF2D8] md:text-7xl">
+            Comodidad para Todos
+          </h1>
+
+          <p className="mx-auto max-w-3xl text-xl leading-relaxed text-[#F2E7D0]/80">
+            Elige la habitaciÃ³n ideal para tu estadÃ­a en CelendÃ­n, Cajamarca. Ambientes cÃ³modos, atenciÃ³n cÃ¡lida y servicios pensados para tu descanso.
+          </p>
+        </div>
+
+        <div className="mb-16 flex flex-wrap justify-center gap-4">
+          {filters.map((filter) => (
+            <button
+              key={filter}
+              onClick={() => setActiveFilter(filter)}
+              className={`rounded-2xl border px-8 py-4 text-lg font-bold transition ${
+                activeFilter === filter
+                  ? "border-[#D8B17A] bg-[#D8B17A] text-white shadow-xl shadow-[#D8B17A]/30"
+                  : "border-[#B58A4F]/40 bg-[#171411] text-[#F2E7D0] hover:bg-[#B58A4F]/15"
+              }`}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          {filteredRooms.map((room) => (
+            <RoomCard key={room.roomNumber} room={room} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default RoomsPage;

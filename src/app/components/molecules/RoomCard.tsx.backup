@@ -1,4 +1,4 @@
-import { Check, MessageCircle, Ruler, Users } from "lucide-react";
+﻿import { Check, MessageCircle, Ruler, Users } from "lucide-react";
 
 type RoomCardProps = {
   roomNumber?: string;

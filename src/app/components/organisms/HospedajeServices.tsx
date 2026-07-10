@@ -6,42 +6,42 @@ const services = [
   {
     icon: FaWifi,
     title: 'WiFi Gratis',
-    desc: 'Internet de alta velocidad en todas las habitaciones y áreas comunes sin costo adicional.',
+    desc: 'Internet de alta velocidad en todas las habitaciones y Ã¡reas comunes sin costo adicional.',
   },
   {
     icon: MdHotTub,
     title: 'Agua Caliente',
-    desc: 'Duchas con agua caliente disponible las 24 horas del día para tu comodidad.',
+    desc: 'Duchas con agua caliente disponible las 24 horas del dÃ­a para tu comodidad.',
   },
   {
     icon: HiClock,
-    title: 'Recepción 24h',
+    title: 'RecepciÃ³n 24h',
     desc: 'Siempre hay alguien disponible para atenderte, desde el check-in hasta emergencias.',
   },
   {
     icon: MdCleaningServices,
     title: 'Limpieza Diaria',
-    desc: 'Servicio de limpieza y cambio de toallas todos los días incluido en tu estadía.',
+    desc: 'Servicio de limpieza y cambio de toallas todos los dÃ­as incluido en tu estadÃ­a.',
   },
   {
     icon: FaParking,
     title: 'Estacionamiento',
-    desc: 'Estacionamiento seguro disponible para huéspedes con vehículo propio. Consultar disponibilidad.',
+    desc: 'Estacionamiento seguro disponible para huÃ©spedes con vehÃ­culo propio. Consultar disponibilidad.',
   },
   {
     icon: FaUtensils,
     title: 'Restaurante',
-    desc: 'Desayunos, almuerzos y cenas con gastronomía peruana típica de Cajamarca.',
+    desc: 'Desayunos, almuerzos y cenas con gastronomÃ­a peruana tÃ­pica de Cajamarca.',
   },
   {
     icon: FaMapMarkedAlt,
-    title: 'Tours Turísticos',
-    desc: 'Organizamos tours a los principales atractivos de Celendín y Cajamarca.',
+    title: 'Tours TurÃ­sticos',
+    desc: 'Organizamos tours a los principales atractivos de CelendÃ­n y Cajamarca.',
   },
   {
     icon: FaMobileAlt,
     title: 'Yape / Plin',
-    desc: 'Pagos digitales aceptados. También efectivo. Sin complicaciones.',
+    desc: 'Pagos digitales aceptados. TambiÃ©n efectivo. Sin complicaciones.',
   },
 ];
 
@@ -60,7 +60,7 @@ export function HospedajeServices() {
             Servicios Incluidos
           </h2>
           <p className="text-lg text-[#F2E7D0]/70 max-w-2xl mx-auto">
-            Todo lo que necesitas para una estadía cómoda y tranquila en Celendín.
+            Todo lo que necesitas para una estadÃ­a cÃ³moda y tranquila en CelendÃ­n.
           </p>
         </div>
 

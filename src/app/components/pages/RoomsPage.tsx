@@ -1,293 +1,169 @@
 import { useMemo, useState } from "react";
-import {
-  FaBed,
-  FaUsers,
-  FaRulerCombined,
-  FaCheckCircle,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { RoomCard } from "../molecules/RoomCard";
+import type { Room } from "../molecules/RoomCard";
 
-type RoomCategory =
-  | "Todas"
-  | "Individual"
-  | "Doble"
-  | "Matrimonial"
-  | "Multiple";
-
-const rooms = [
+const rooms: Room[] = [
   {
-    id: 1,
-    number: "Hab. 01",
+    roomNumber: "01",
     title: "Habitación Matrimonial",
-    category: "Matrimonial",
-    people: "2 persona",
-    size: "12 m²",
-    image: "//habitaciones/habitacion1.webp",
-    features: [
-      "Cama Matrimonial",
-      "Baño privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "12 m2",
+    image: "/habitaciones/habitacion1.webp",
+    features: ["Cama matrimonial", "Baño privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
   },
   {
-    id: 2,
-    number: "Hab. 02",
+    roomNumber: "02",
     title: "Habitación Doble",
-    category: "Doble",
-    people: "2 persona",
-    size: "15 m²",
-    image: "//habitaciones/habitacion2.webp",
-    features: [
-      "Cama Doble",
-      "Baño privdo con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
-  },
-  {
-    id: 3,
-    number: "Hab. 04",
-    title: "Habitación Multiple",
-    category: "Multiple",
-    people: "3 - 5 persona",
-    size: "29 m²",
-    image: "//habitaciones/habitacion4.webp",
-    features: [
-      "Varias camas comodas",
-      "Baño privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
-  },
-  {
-    id: 4,
-    number: "Hab. 06",
-    title: "Habitación Matrimonial",
-    category: "Matrimonial",
+    type: "Doble",
     people: "2 personas",
-    size: "11.5 m²",
-    image: "//habitaciones/habitacion6.webp",
-    features: [
-      "Cama matrimonial",
-      "Baño privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    size: "15 m2",
+    image: "/habitaciones/habitacion2.webp",
+    features: ["Cama doble", "Baño privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
   },
   {
-    id: 5,
-    number: "Hab. 07",
-    title: "Habitación Matrimonial",
-    category: "Matrimonial",
-    people: "2 personas",
-    size: "10 m²",
-    image: "//habitaciones/habitacion7.webp",
-    features: [
-      "Cama matrimonial",
-      "Baño privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
-  },
-  {
-    id: 6,
-    number: "Hab. 08",
-    title: "Habitación Matrimonial",
-    category: "Matrimonial",
-    people: "2 personas",
-    size: "10 m²",
-    image: "//habitaciones/habitacion8.webp",
-    features: [
-      "Cama matrimonial",
-      "Baño privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
-  },
-  {
-    id: 7,
-    number: "Hab. 10",
-    title: "Habitación Matrimonial",
-    category: "Matrimonial",
-    people: "2 personas",
-    size: "00 m²",
-    image: "//habitaciones/habitacion10.webp",
-    features: [
-      "Cama matrimonial",
-      "Sin baño",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
-  },
-  {
-    id: 8,
-    number: "Hab. 11",
-    title: "Habitación Multiple",
-    category: "Multiple",
-    people: "3 - 5 personas",
-    size: "25 m²",
-    image: "//habitaciones/habitacion11.webp",
-    features: [
-      "Varias camas cómodas",
-      "Baño privado con ducha",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
-  },
-  {
-    id: 9,
-    number: "Hab. 12",
+    roomNumber: "03",
     title: "Habitación Individual",
-    category: "Individual",
-    people: "1 personas",
-    size: "5 m²",
-    image: "//habitaciones/habitacion12.webp",
-    features: [
-      "Cama individual",
-      "Sin baño",
-      "WiFi gratuito",
-      "Agua caliente 24h",
-    ],
+    type: "Individual",
+    people: "1 persona",
+    size: "8 m2",
+    image: "/habitaciones/habitacion10.webp",
+    features: ["Cama individual", "WiFi gratuito", "Agua caliente 24h", "Ambiente cómodo"],
+  },
+  {
+    roomNumber: "04",
+    title: "Habitación Múltiple",
+    type: "Múltiple",
+    people: "3 - 5 personas",
+    size: "29 m2",
+    image: "/habitaciones/habitacion4.webp",
+    features: ["Varias camas cómodas", "Baño privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "05",
+    title: "Habitación Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "11,5 m2",
+    image: "/habitaciones/habitacion6.webp",
+    features: ["Cama matrimonial", "Baño privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "06",
+    title: "Habitación Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "11,5 m2",
+    image: "/habitaciones/habitacion6.webp",
+    features: ["Cama matrimonial", "Baño privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "07",
+    title: "Habitación Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "10 m2",
+    image: "/habitaciones/habitacion7.webp",
+    features: ["Cama matrimonial", "Baño privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "08",
+    title: "Habitación Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "10 m2",
+    image: "/habitaciones/habitacion6.webp",
+    features: ["Cama matrimonial", "Baño privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "09",
+    title: "Habitación Doble",
+    type: "Doble",
+    people: "2 personas",
+    size: "15 m2",
+    image: "/habitaciones/habitacion2.webp",
+    features: ["Cama doble", "Baño privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "10",
+    title: "Habitación Matrimonial",
+    type: "Matrimonial",
+    people: "2 personas",
+    size: "10 m2",
+    image: "/habitaciones/habitacion10.webp",
+    features: ["Cama matrimonial", "Sin baño", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "11",
+    title: "Habitación Múltiple",
+    type: "Múltiple",
+    people: "3 - 5 personas",
+    size: "25 m2",
+    image: "/habitaciones/habitacion11.webp",
+    features: ["Varias camas cómodas", "Baño privado con ducha", "WiFi gratuito", "Agua caliente 24h"],
+  },
+  {
+    roomNumber: "12",
+    title: "Habitación Individual",
+    type: "Individual",
+    people: "1 persona",
+    size: "5 m2",
+    image: "/habitaciones/habitacion12.webp",
+    features: ["Cama individual", "Sin baño", "WiFi gratuito", "Agua caliente 24h"],
   },
 ];
 
-const filters: RoomCategory[] = [
-  "Todas",
-  "Individual",
-  "Doble",
-  "Matrimonial",
-  "Multiple",
-];
+const filters = ["Todas", "Individual", "Doble", "Matrimonial", "Múltiple"];
 
 export function RoomsPage() {
-  const [activeFilter, setActiveFilter] =
-    useState<RoomCategory>("Todas");
+  const [activeFilter, setActiveFilter] = useState("Todas");
 
   const filteredRooms = useMemo(() => {
     if (activeFilter === "Todas") return rooms;
-    return rooms.filter(
-      (room) => room.category === activeFilter,
-    );
+    return rooms.filter((room) => room.type === activeFilter);
   }, [activeFilter]);
 
   return (
-    <main className="min-h-screen bg-[#171411] text-[#F2E7D0] pt-32 pb-24">
-      {/* Fondo decorativo */}
-      <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-[#B58A4F]/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-[#D8B17A]/10 rounded-full blur-3xl" />
-      </div>
+    <section className="min-h-screen bg-[#100d0a] px-5 py-24 text-[#F2E7D0]">
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-14 text-center">
+          <span className="mb-5 inline-flex rounded-full border border-[#B58A4F]/40 px-6 py-2 text-sm font-bold uppercase tracking-[0.45em] text-[#D8B17A]">
+            Habitaciones
+          </span>
 
-      <section id="habitaciones" className="relative z-10">
-        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
-          {/* Encabezado */}
-          <div className="text-center mb-12">
-            <span className="inline-flex items-center gap-2 text-[#D8B17A] tracking-[0.35em] uppercase text-xs sm:text-sm font-medium border border-[#B58A4F]/30 px-5 py-2.5 rounded-full bg-[#171411]/60 backdrop-blur-sm mb-5">
-              <FaBed size={12} />
-              Habitaciones
-            </span>
+          <h1 className="mb-6 font-serif text-5xl font-bold text-[#FFF2D8] md:text-7xl">
+            Comodidad para Todos
+          </h1>
 
-            <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl text-[#F2E7D0] leading-tight mb-4">
-              Comodidad para Todos
-            </h1>
-
-            <p className="max-w-3xl mx-auto text-base sm:text-lg text-[#F2E7D0]/75 leading-relaxed">
-              Elige la habitación ideal para tu estadía en
-              Celendín. Ambientes cómodos, atención cálida y
-              servicios pensados para tu descanso.
-            </p>
-          </div>
-
-          {/* Filtros */}
-          <div className="flex flex-wrap justify-center gap-3 mb-14">
-            {filters.map((filter) => (
-              <button
-                key={filter}
-                onClick={() => setActiveFilter(filter)}
-                className={`px-6 py-3 rounded-xl font-semibold text-sm sm:text-base border transition-all duration-300 ${activeFilter === filter
-                  ? "bg-gradient-to-r from-[#B58A4F] to-[#D8B17A] text-white border-transparent shadow-xl shadow-[#B58A4F]/30"
-                  : "bg-[#171411]/50 text-[#F2E7D0] border-[#B58A4F]/30 hover:border-[#B58A4F] hover:bg-[#B58A4F]/10"
-                  }`}
-              >
-                {filter}
-              </button>
-            ))}
-          </div>
-
-          {/* Tarjetas */}
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
-            {filteredRooms.map((room) => (
-              <article
-                key={room.id}
-                className="group bg-[#211C18] border border-[#B58A4F]/25 rounded-3xl overflow-hidden shadow-2xl shadow-black/30 hover:border-[#D8B17A]/60 transition-all duration-300"
-              >
-                {/* Imagen */}
-                <div className="relative h-56 sm:h-75 overflow-hidden">
-                  <img
-                    src={room.image}
-                    alt={room.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#171411]/90 via-transparent to-transparent" />
-
-                  <span className="absolute top-4 left-4 bg-[#2A2520]/90 border border-[#B58A4F]/40 text-[#D8B17A] px-3 py-1.5 rounded-full text-xs sm:text-sm font-bold shadow-lg">
-                    {room.number}
-                  </span>
-
-
-                </div>
-
-                {/* Información */}
-                <div className="px-[24px] py-[5px]">
-                  <h2 className="font-serif text-[1.5rem] sm:text-[1.7rem] text-[#F2E7D0] mb-3 leading-tight">
-                    {room.title}
-                  </h2>
-
-                  <div className="flex flex-wrap items-center gap-4 mb-4 text-[#D8B17A] text-xs sm:text-sm font-medium">
-                    <span className="inline-flex items-center gap-2">
-                      <FaUsers size={13} />
-                      {room.people}
-                    </span>
-
-                    <span className="inline-flex items-center gap-2">
-                      <FaRulerCombined size={13} />
-                      {room.size}
-                    </span>
-                  </div>
-
-                  <ul className="space-y-2.5 mb-6">
-                    {room.features.map((feature, index) => (
-                      <li
-                        key={index}
-                        className="flex items-start gap-3 text-[#F2E7D0]/85 text-sm leading-relaxed"
-                      >
-                        <FaCheckCircle
-                          className="text-[#D8B17A] mt-1 flex-shrink-0"
-                          size={14}
-                        />
-                        <span>{feature}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <a
-                    href={`https://wa.me/51999999999?text=Hola,%20quiero%20reservar%20la%20${encodeURIComponent(
-                      room.title,
-                    )}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#B58A4F] to-[#D8B17A] text-white px-5 py-3.5 rounded-xl font-bold text-sm shadow-xl shadow-[#B58A4F]/25 hover:brightness-110 transition-all duration-300"
-                  >
-                    <FaWhatsapp size={16} />
-                    Reservar ahora
-                  </a>
-                </div>
-              </article>
-            ))}
-          </div>
+          <p className="mx-auto max-w-3xl text-xl leading-relaxed text-[#F2E7D0]/80">
+            Elige la habitación ideal para tu estadía en Celendín, Cajamarca. Ambientes cómodos, atención cálida y servicios pensados para tu descanso.
+          </p>
         </div>
-      </section>
-    </main>
+
+        <div className="mb-16 flex flex-wrap justify-center gap-4">
+          {filters.map((filter) => (
+            <button
+              key={filter}
+              onClick={() => setActiveFilter(filter)}
+              className={`rounded-2xl border px-8 py-4 text-lg font-bold transition ${
+                activeFilter === filter
+                  ? "border-[#D8B17A] bg-[#D8B17A] text-white shadow-xl shadow-[#D8B17A]/30"
+                  : "border-[#B58A4F]/40 bg-[#171411] text-[#F2E7D0] hover:bg-[#B58A4F]/15"
+              }`}
+            >
+              {filter}
+            </button>
+          ))}
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+          {filteredRooms.map((room) => (
+            <RoomCard key={room.roomNumber} room={room} />
+          ))}
+        </div>
+      </div>
+    </section>
   );
 }
+
+export default RoomsPage;

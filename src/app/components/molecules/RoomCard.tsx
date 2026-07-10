@@ -1,86 +1,70 @@
-import { FaUsers, FaBed, FaWhatsapp } from 'react-icons/fa';
-import { LazyImage } from '../atoms/LazyImage';
-
-interface RoomCardProps {
-  image: string;
-  title: string;
-  capacity: string;
-  size: string;
-  price: string;
+export type Room = {
   roomNumber: string;
-  services?: string[];
-  type?: string;
-}
+  title: string;
+  type: string;
+  people: string;
+  size: string;
+  image: string;
+  features: string[];
+};
 
-export function RoomCard({ image, title, capacity, size, price, roomNumber, services = [] }: RoomCardProps) {
-  const whatsappMsg = `Hola, quiero reservar una ${title} (${roomNumber}). ¿Pueden confirmar disponibilidad y precio?`;
+type RoomCardProps = {
+  room: Room;
+};
+
+export function RoomCard({ room }: RoomCardProps) {
+  const phone = "51999999999";
+  const message = encodeURIComponent(`Hola, quiero reservar la ${room.title} Hab. ${room.roomNumber}`);
 
   return (
-    <div className="group relative flex flex-col">
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-[#B58A4F] to-[#D8B17A] rounded-2xl opacity-0 group-hover:opacity-15 blur-xl transition-opacity duration-500 pointer-events-none"></div>
+    <article className="overflow-hidden rounded-[26px] border border-[#B58A4F]/35 bg-[#171411] shadow-2xl shadow-black/30">
+      <div className="relative h-[300px] w-full overflow-hidden">
+        <img
+          src={room.image}
+          alt={`${room.title} Habitación ${room.roomNumber}`}
+          className="h-full w-full object-cover"
+          loading="lazy"
+        />
 
-      <div className="relative flex flex-col bg-gradient-to-br from-[#2A2520] to-[#1C1815] rounded-2xl border border-[#B58A4F]/20 hover:border-[#B58A4F]/50 transition-all duration-300 hover:-translate-y-1 shadow-xl overflow-hidden h-full">
-        {/* Imagen */}
-        <div className="relative h-56 overflow-hidden flex-shrink-0">
-          <LazyImage
-            src={image}
-            alt={title}
-            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#171411]/80 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#171411] via-black/10 to-transparent" />
 
-          {/* Número de habitación */}
-          <div className="absolute top-2 left-2">
-            <span className="text-xs font-medium px-2 py-1 rounded-full backdrop-blur-md bg-[#171411]/80 text-[#D8B17A] border border-[#B58A4F]/40">
-              {roomNumber}
-            </span>
-          </div>
-
-        </div>
-
-        {/* Contenido */}
-        <div className="p-3.5 flex flex-col flex-1">
-          <h3 className="text-[#F2E7D0] font-serif text-base mb-1">{title}</h3>
-          <div className="flex items-center gap-3 text-[#F2E7D0]/50 text-xs mb-2.5">
-            <span className="flex items-center gap-1">
-              <FaUsers size={10} className="text-[#B58A4F]" />
-              {capacity}
-            </span>
-            <span className="flex items-center gap-1">
-              <FaBed size={10} className="text-[#B58A4F]" />
-              {size}
-            </span>
-          </div>
-
-          {/* Servicios */}
-          {services.length > 0 && (
-            <ul className="space-y-0.5 mb-3">
-              {services.map((s, i) => (
-                <li key={i} className="flex items-center gap-1.5 text-[#F2E7D0]/60 text-[11px]">
-                  <div className="w-1 h-1 rounded-full bg-[#D8B17A] flex-shrink-0"></div>
-                  {s}
-                </li>
-              ))}
-            </ul>
-          )}
-
-          {/* Botón reservar */}
-          <div className="mt-auto pt-3 border-t border-[#B58A4F]/15">
-            <a
-              href={`https://wa.me/51900245939?text=${encodeURIComponent(whatsappMsg)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group/btn relative w-full bg-gradient-to-r from-[#B58A4F] to-[#D8B17A] text-white py-2 rounded-xl text-xs font-medium text-center overflow-hidden shadow-lg shadow-[#B58A4F]/25 hover:shadow-[#B58A4F]/45 transition-all duration-300 flex items-center justify-center gap-1.5"
-            >
-              <span className="relative z-10 flex items-center gap-1.5">
-                <FaWhatsapp size={12} />
-                Reservar ahora
-              </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-[#D8B17A] to-[#B58A4F] opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
-            </a>
-          </div>
-        </div>
+        <span className="absolute left-6 top-6 rounded-2xl bg-[#171411] px-5 py-3 text-lg font-bold text-[#D8B17A] shadow-lg">
+          Hab. {room.roomNumber}
+        </span>
       </div>
-    </div>
+
+      <div className="p-8">
+        <h3 className="mb-5 font-serif text-4xl font-bold leading-tight text-[#FFF2D8]">
+          {room.title}
+        </h3>
+
+        <div className="mb-6 flex flex-wrap gap-5 text-lg font-bold text-[#D8B17A]">
+          <span>{room.people}</span>
+          <span>{room.size}</span>
+        </div>
+
+        <ul className="mb-8 space-y-4 text-lg font-medium text-[#F2E7D0]">
+          {room.features.map((feature) => (
+            <li key={feature} className="flex items-center gap-3">
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#D8B17A] text-sm font-black text-[#171411]">
+                ✓
+              </span>
+              <span>{feature}</span>
+            </li>
+          ))}
+        </ul>
+
+        <a
+          href={`https://wa.me/${phone}?text=${message}`}
+          target="_blank"
+          rel="noreferrer"
+          className="block w-full rounded-2xl bg-gradient-to-r from-[#C99651] to-[#E1B875] px-6 py-4 text-center text-lg font-bold text-white shadow-xl shadow-[#C99651]/20 transition hover:scale-[1.02]"
+        >
+          Reservar ahora
+        </a>
+      </div>
+    </article>
   );
 }
+
+export default RoomCard;

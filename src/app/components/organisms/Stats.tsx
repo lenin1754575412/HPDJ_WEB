@@ -10,17 +10,17 @@ export function Stats() {
     {
       icon: HiUsers,
       number: "+500",
-      label: "Huéspedes atendidos",
+      label: "HuÃ©spedes atendidos",
     },
     {
       icon: HiClock,
       number: "24/7",
-      label: "Atención disponible",
+      label: "AtenciÃ³n disponible",
     },
     {
       icon: HiLocationMarker,
-      number: "Céntrico",
-      label: "Ubicación en Celendín",
+      number: "CÃ©ntrico",
+      label: "UbicaciÃ³n en CelendÃ­n",
     },
   ];
 
@@ -53,7 +53,7 @@ export function Stats() {
                   </div>
                 </div>
 
-                {/* Número */}
+                {/* NÃºmero */}
                 <p className="text-3xl lg:text-5xl font-serif text-transparent bg-clip-text bg-gradient-to-r from-[#B58A4F] to-[#D8B17A] mb-6++ group-hover:scale-110 transition-transform duration-300">
                   {stat.number}
                 </p>

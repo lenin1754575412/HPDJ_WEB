@@ -1,3 +1,18 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+
+/* ANIMACION-HOVER-HABITACIONES */
+img[src*="/habitaciones/"],
+img[src*="habitacion"] {
+  transition: transform 0.45s ease, filter 0.45s ease;
+  transform-origin: center;
+}
+
+img[src*="/habitaciones/"]:hover,
+img[src*="habitacion"]:hover {
+  transform: scale(1.08);
+  filter: brightness(1.08) contrast(1.05);
+}
+/* FIN-ANIMACION-HOVER-HABITACIONES */
+

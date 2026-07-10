@@ -20,7 +20,7 @@ export function HomePage() {
       {/* Hero */}
       <Hero />
 
-      {/* Reserva rÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡pida flotante */}
+      {/* Reserva rápida flotante */}
       <QuickBooking />
 
       {/* Stats de confianza */}
@@ -119,7 +119,7 @@ export function HomePage() {
               Tours y Paquetes
             </h2>
             <p className="text-lg text-[#F2E7D0]/75 max-w-2xl mx-auto">
-              Conoce nuevos destinos y dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©janos convertir cada recorrido
+              Conoce nuevos destinos y déjanos convertir cada recorrido
               en una aventura llena de momentos inolvidables.
             </p>
           </div>
@@ -129,17 +129,20 @@ export function HomePage() {
               {
                 title: "Paquete Gocta",
                 duration: "1D-2D",
-                image: "/habitaciones/hab-01.png",
+                image:
+                  "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
               },
               {
                 title: "Paquete Kuelap",
                 duration: "1D-2D",
-                image: "/habitaciones/hab-02.png",
+                image:
+                  "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600&h=400&fit=crop",
               },
               {
                 title: "Paquete Combinado",
                 duration: "1D-2D",
-                image: "/habitaciones/hab-03.png",
+                image:
+                  "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=400&fit=crop",
               },
             ].map((tour, i) => (
               <div
@@ -176,7 +179,7 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* CafeterÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a */}
+      {/* Cafetería */}
       <section className="py-24 bg-gradient-to-br from-[#2A2520] via-[#1C1815] to-[#171411] relative overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#B58A4F]/8 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#D8B17A]/8 rounded-full blur-3xl pointer-events-none"></div>
@@ -189,7 +192,7 @@ export function HomePage() {
               <div className="relative h-[420px] lg:h-[520px] rounded-3xl overflow-hidden border border-[#B58A4F]/20 shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
-                  alt="CafeterÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a H Peru Tours"
+                  alt="Cafetería H Peru Tours"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#171411]/90 via-[#171411]/20 to-transparent"></div>
@@ -198,10 +201,10 @@ export function HomePage() {
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="text-xl font-serif text-[#F2E7D0] mb-1">
-                          CafeterÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a
+                          Cafetería
                         </p>
                         <p className="text-[#D8B17A] text-sm flex items-center gap-1.5">
-                          <FaClock size={11} /> 6:00 AM ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ 10:30
+                          <FaClock size={11} /> 6:00 AM – 10:30
                           PM
                         </p>
                       </div>
@@ -223,21 +226,21 @@ export function HomePage() {
                 <div className="inline-block mb-4">
                   <span className="inline-flex items-center gap-2 text-[#D8B17A] tracking-[0.3em] uppercase text-xs font-medium border border-[#B58A4F]/30 px-5 py-2.5 rounded-full backdrop-blur-sm bg-[#171411]/30">
                     <FaUtensils size={10} />
-                    Nuestra CafeterÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a
+                    Nuestra Cafetería
                   </span>
                 </div>
                 <h2 className="text-4xl lg:text-5xl font-serif text-[#F2E7D0] mb-5">
                   Sabores de Cajamarca
                 </h2>
                 <p className="text-lg text-[#F2E7D0]/70 leading-relaxed">
-                  Disfruta de cafÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s, bebidas calientes, jugos naturales, postres, sÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ndwiches y deliciosos acompaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±amientos en un ambiente cÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³modo, familiar y acogedor.
+                  Disfruta de cafés, bebidas calientes, jugos naturales, postres, sándwiches y deliciosos acompañamientos en un ambiente cómodo, familiar y acogedor.
                 </p>
               </div>
 
               {/* Productos destacados */}
               <div className="grid grid-cols-3 gap-3">
                 {[
-                  { label: "CafÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â© Premium", time: "Todo el dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a" },
+                  { label: "Café Premium", time: "Todo el día" },
                   { label: "Jugos naturales", time: "Frescos" },
                   { label: "Postres", time: "Artesanales" },
                 ].map((dish, i) => (
@@ -258,9 +261,9 @@ export function HomePage() {
               <ul className="space-y-3">
                 {[
                   "Abierto de 6:00 AM a 11:00 PM",
-                  "CafÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©s, infusiones y bebidas calientes",
-                  "Jugos, batidos y bebidas frÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­as",
-                  "SÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ndwiches, postres y desayunos",
+                  "Cafés, infusiones y bebidas calientes",
+                  "Jugos, batidos y bebidas frías",
+                  "Sándwiches, postres y desayunos",
                 ].map((item, i) => (
                   <li
                     key={i}
@@ -292,7 +295,7 @@ export function HomePage() {
                   className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#B58A4F] to-[#D8B17A] text-white px-7 py-3.5 rounded-xl font-medium shadow-xl shadow-[#B58A4F]/30 hover:shadow-[#B58A4F]/50 transition-all duration-300 hover:-translate-y-1 group"
                 >
                   <FaConciergeBell size={16} />
-                  Ver menÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âº
+                  Ver menú
                   <FaArrowRight
                     className="group-hover:translate-x-1 transition-transform"
                     size={14}
@@ -304,7 +307,7 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* UbicaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n rÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡pida */}
+      {/* Ubicación rápida */}
       <section className="py-16 bg-gradient-to-b from-[#171411] to-[#1C1815]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -312,14 +315,14 @@ export function HomePage() {
               <div className="inline-block">
                 <span className="inline-flex items-center gap-2 text-[#D8B17A] tracking-[0.3em] uppercase text-xs font-medium border border-[#B58A4F]/30 px-5 py-2.5 rounded-full backdrop-blur-sm bg-[#171411]/30">
                   <HiLocationMarker size={12} />
-                  CÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³mo llegar
+                  Cómo llegar
                 </span>
               </div>
               <h2 className="text-3xl lg:text-4xl font-serif text-[#F2E7D0]">
-                Estamos en el centro de CelendÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­n
+                Estamos en el centro de Celendín
               </h2>
               <p className="text-[#F2E7D0]/70">
-                Jr. Arequipa 213, CelendÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­n, Cajamarca, PerÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âº. A
+                Jr. Arequipa 213, Celendín, Cajamarca, Perú. A
                 pocos pasos de la Plaza de Armas y los
                 principales atractivos de la ciudad.
               </p>
@@ -331,7 +334,7 @@ export function HomePage() {
                   className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#B58A4F] to-[#D8B17A] text-white px-6 py-3.5 rounded-xl font-medium shadow-xl hover:-translate-y-0.5 transition-all duration-300"
                 >
                   <HiLocationMarker size={16} />
-                  CÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³mo llegar
+                  Cómo llegar
                 </a>
               </div>
             </div>
@@ -347,7 +350,7 @@ export function HomePage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="UbicaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n PERU TOURS HOSPEDAJE"
+                  title="Ubicación PERU TOURS HOSPEDAJE"
                 ></iframe>
               </div>
             </div>

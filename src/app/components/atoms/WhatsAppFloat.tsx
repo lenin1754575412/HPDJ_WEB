@@ -20,7 +20,7 @@ export function WhatsAppFloat() {
 
       <a
         href={`https://wa.me/51900245939?text=${encodeURIComponent(
-          "Hola, me gustarÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a consultar disponibilidad y reservar una habitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n",
+          "Hola, me gustaría consultar disponibilidad y reservar una habitación",
         )}`}
         target="_blank"
         rel="noopener noreferrer"
@@ -32,7 +32,7 @@ export function WhatsAppFloat() {
           Reservar por WhatsApp
         </span>
 
-        {/* BotÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n */}
+        {/* Botón */}
         <div className="relative flex-shrink-0 wa-bounce">
           {/* Anillos de pulso */}
           <span className="absolute inset-0 rounded-full bg-[#25D366] wa-pulse-ring"></span>

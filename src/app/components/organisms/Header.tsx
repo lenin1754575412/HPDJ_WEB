@@ -25,7 +25,7 @@ export function Header() {
     { name: "Habitaciones", path: "/habitaciones" },
     { name: "Tours", path: "/tours" },
     { name: "Nosotros", path: "/nosotros" },
-    { name: "Cafeter\u00eda", path: "/cafeteria" },
+    { name: "Cafetería", path: "/cafeteria" },
     { name: "Contacto", path: "/contacto" },
   ];
 
@@ -49,7 +49,7 @@ export function Header() {
             />
           </Link>
 
-          {/* MenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âº de Escritorio (Desktop) */}
+          {/* Menú de Escritorio (Desktop) */}
           <nav className="hidden lg:flex items-center gap-8">
             {menuItems.map((item) => (
               <Link
@@ -71,7 +71,7 @@ export function Header() {
             ))}
           </nav>
 
-          {/* BotÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n de MenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âº Hamburguesa MÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³vil */}
+          {/* Botón de Menú Hamburguesa Móvil */}
           <button
             className="lg:hidden text-[#D8B17A] p-2 z-50"
             onClick={() =>
@@ -87,7 +87,7 @@ export function Header() {
         </div>
       </div>
 
-      {/* MenÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âº Desplegable Lateral MÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³vil */}
+      {/* Menú Desplegable Lateral Móvil */}
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed top-20 right-0 w-1/2 h-[calc(100vh-5rem)] bg-[#2A2520]/85 backdrop-blur-md border-l border-[#B58A4F]/20 shadow-2xl transition-all duration-300">
           <nav className="px-6 py-8 flex flex-col items-end space-y-5">

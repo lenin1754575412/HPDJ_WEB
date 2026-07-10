@@ -33,7 +33,7 @@ export function TourCard({ image, title, includes = [] }: TourCardProps) {
 
         {/* Contenido */}
         <div className="relative p-6 space-y-4">
-          {/* TÃƒÆ’Ã‚Â­tulo */}
+          {/* Título */}
           <h3 className="text-xl lg:text-2xl font-serif text-[#F2E7D0] group-hover:text-[#D8B17A] transition-colors leading-tight">
             {title}
           </h3>
@@ -58,7 +58,7 @@ export function TourCard({ image, title, includes = [] }: TourCardProps) {
             </div>
           )}
 
-          {/* BotÃƒÆ’Ã‚Â³n */}
+          {/* Botón */}
           <div className="pt-4 border-t border-[#B58A4F]/20">
             <a
               href={`https://wa.me/51900245939?text=Hola%2C%20me%20gustar%C3%ADa%20reservar%20el%20paquete%20${encodeURIComponent(title)}`}

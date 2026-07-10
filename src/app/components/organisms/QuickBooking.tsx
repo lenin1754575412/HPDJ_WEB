@@ -17,8 +17,8 @@ export function QuickBooking() {
     const msg = `Hola, quiero consultar disponibilidad:
 - Entrada: ${checkIn || "por confirmar"}
 - Salida: ${checkOut || "por confirmar"}
-- HuÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©spedes: ${guests}
-- HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n: ${roomType || "cualquier tipo"}`;
+- Huéspedes: ${guests}
+- Habitación: ${roomType || "cualquier tipo"}`;
 
     const encodedMsg = encodeURIComponent(msg);
 
@@ -91,10 +91,10 @@ export function QuickBooking() {
               </div>
             </div>
 
-            {/* HuÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©spedes */}
+            {/* Huéspedes */}
             <div>
               <label className="block text-[#D8B17A] text-xs mb-2 tracking-wide uppercase">
-                HuÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©spedes
+                Huéspedes
               </label>
               <div className="relative">
                 <FaUsers
@@ -119,10 +119,10 @@ export function QuickBooking() {
               </div>
             </div>
 
-            {/* Tipo de habitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n */}
+            {/* Tipo de habitación */}
             <div>
               <label className="block text-[#D8B17A] text-xs mb-2 tracking-wide uppercase">
-                Tipo de habitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n
+                Tipo de habitación
               </label>
               <div className="relative">
                 <FaBed
@@ -141,32 +141,32 @@ export function QuickBooking() {
                     value="Simple"
                     className="bg-[#1C1815]"
                   >
-                    HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Individual
+                    Habitación Individual
                   </option>
                   <option
                     value="Doble"
                     className="bg-[#1C1815]"
                   >
-                    HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Doble
+                    Habitación Doble
                   </option>
                   <option
                     value="Matrimonial"
                     className="bg-[#1C1815]"
                   >
-                    HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Matrimonial
+                    Habitación Matrimonial
                   </option>
                   <option
                     value="Multiple"
                     className="bg-[#1C1815]"
                   >
-                    HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Multiple
+                    Habitación Multiple
                   </option>
                 </select>
               </div>
             </div>
           </div>
 
-          {/* BotÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n */}
+          {/* Botón */}
           <div className="flex flex-col sm:flex-row gap-3 items-center justify-between">
             <p className="text-[#F2E7D0]/70 text-1.5rem">
               La disponibilidad se confirma directamente con el

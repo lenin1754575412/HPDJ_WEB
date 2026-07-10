@@ -6,42 +6,42 @@ const services = [
   {
     icon: FaWifi,
     title: 'WiFi Gratis',
-    desc: 'Internet de alta velocidad en todas las habitaciones y ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡reas comunes sin costo adicional.',
+    desc: 'Internet de alta velocidad en todas las habitaciones y áreas comunes sin costo adicional.',
   },
   {
     icon: MdHotTub,
     title: 'Agua Caliente',
-    desc: 'Duchas con agua caliente disponible las 24 horas del dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a para tu comodidad.',
+    desc: 'Duchas con agua caliente disponible las 24 horas del día para tu comodidad.',
   },
   {
     icon: HiClock,
-    title: 'RecepciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n 24h',
+    title: 'Recepción 24h',
     desc: 'Siempre hay alguien disponible para atenderte, desde el check-in hasta emergencias.',
   },
   {
     icon: MdCleaningServices,
     title: 'Limpieza Diaria',
-    desc: 'Servicio de limpieza y cambio de toallas todos los dÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­as incluido en tu estadÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a.',
+    desc: 'Servicio de limpieza y cambio de toallas todos los días incluido en tu estadía.',
   },
   {
     icon: FaParking,
     title: 'Estacionamiento',
-    desc: 'Estacionamiento seguro disponible para huÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©spedes con vehÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­culo propio. Consultar disponibilidad.',
+    desc: 'Estacionamiento seguro disponible para huéspedes con vehículo propio. Consultar disponibilidad.',
   },
   {
     icon: FaUtensils,
     title: 'Restaurante',
-    desc: 'Desayunos, almuerzos y cenas con gastronomÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a peruana tÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­pica de Cajamarca.',
+    desc: 'Desayunos, almuerzos y cenas con gastronomía peruana típica de Cajamarca.',
   },
   {
     icon: FaMapMarkedAlt,
-    title: 'Tours TurÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­sticos',
-    desc: 'Organizamos tours a los principales atractivos de CelendÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­n y Cajamarca.',
+    title: 'Tours Turísticos',
+    desc: 'Organizamos tours a los principales atractivos de Celendín y Cajamarca.',
   },
   {
     icon: FaMobileAlt,
     title: 'Yape / Plin',
-    desc: 'Pagos digitales aceptados. TambiÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â©n efectivo. Sin complicaciones.',
+    desc: 'Pagos digitales aceptados. También efectivo. Sin complicaciones.',
   },
 ];
 
@@ -60,7 +60,7 @@ export function HospedajeServices() {
             Servicios Incluidos
           </h2>
           <p className="text-lg text-[#F2E7D0]/70 max-w-2xl mx-auto">
-            Todo lo que necesitas para una estadÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a cÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³moda y tranquila en CelendÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­n.
+            Todo lo que necesitas para una estadía cómoda y tranquila en Celendín.
           </p>
         </div>
 

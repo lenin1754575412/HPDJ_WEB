@@ -18,14 +18,14 @@ const rooms = [
   {
     id: 1,
     number: "Hab. 01",
-    title: "HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Matrimonial",
+    title: "Habitación Matrimonial",
     category: "Matrimonial",
     people: "2 persona",
-    size: "12 mÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²",
-    image: "/habitaciones/hab-01.png",
+    size: "12 m²",
+    image: "//habitaciones/habitacion1.webp",
     features: [
       "Cama Matrimonial",
-      "BaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -33,14 +33,14 @@ const rooms = [
   {
     id: 2,
     number: "Hab. 02",
-    title: "HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Doble",
+    title: "Habitación Doble",
     category: "Doble",
     people: "2 persona",
-    size: "15 mÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²",
-    image: "/habitaciones/hab-02.png",
+    size: "15 m²",
+    image: "//habitaciones/habitacion2.webp",
     features: [
       "Cama Doble",
-      "BaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o privdo con ducha",
+      "Baño privdo con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -48,14 +48,14 @@ const rooms = [
   {
     id: 3,
     number: "Hab. 04",
-    title: "HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Multiple",
+    title: "Habitación Multiple",
     category: "Multiple",
     people: "3 - 5 persona",
-    size: "29 mÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²",
-    image: "/habitaciones/hab-03.png",
+    size: "29 m²",
+    image: "//habitaciones/habitacion4.webp",
     features: [
       "Varias camas comodas",
-      "BaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -63,14 +63,14 @@ const rooms = [
   {
     id: 4,
     number: "Hab. 06",
-    title: "HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Matrimonial",
+    title: "Habitación Matrimonial",
     category: "Matrimonial",
     people: "2 personas",
-    size: "11.5 mÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²",
-    image: "/habitaciones/hab-04.png",
+    size: "11.5 m²",
+    image: "//habitaciones/habitacion6.webp",
     features: [
       "Cama matrimonial",
-      "BaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -78,14 +78,14 @@ const rooms = [
   {
     id: 5,
     number: "Hab. 07",
-    title: "HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Matrimonial",
+    title: "Habitación Matrimonial",
     category: "Matrimonial",
     people: "2 personas",
-    size: "10 mÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²",
-    image: "/habitaciones/hab-05.png",
+    size: "10 m²",
+    image: "//habitaciones/habitacion7.webp",
     features: [
       "Cama matrimonial",
-      "BaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -93,14 +93,14 @@ const rooms = [
   {
     id: 6,
     number: "Hab. 08",
-    title: "HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Matrimonial",
+    title: "Habitación Matrimonial",
     category: "Matrimonial",
     people: "2 personas",
-    size: "10 mÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²",
-    image: "/habitaciones/hab-06.png",
+    size: "10 m²",
+    image: "//habitaciones/habitacion8.webp",
     features: [
       "Cama matrimonial",
-      "BaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -108,14 +108,14 @@ const rooms = [
   {
     id: 7,
     number: "Hab. 10",
-    title: "HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Matrimonial",
+    title: "Habitación Matrimonial",
     category: "Matrimonial",
     people: "2 personas",
-    size: "00 mÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²",
-    image: "/habitaciones/hab-07.png",
+    size: "00 m²",
+    image: "//habitaciones/habitacion10.webp",
     features: [
       "Cama matrimonial",
-      "Sin baÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o",
+      "Sin baño",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -123,14 +123,14 @@ const rooms = [
   {
     id: 8,
     number: "Hab. 11",
-    title: "HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Multiple",
+    title: "Habitación Multiple",
     category: "Multiple",
     people: "3 - 5 personas",
-    size: "25 mÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²",
-    image: "/habitaciones/hab-08.png",
+    size: "25 m²",
+    image: "//habitaciones/habitacion11.webp",
     features: [
-      "Varias camas cÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³modas",
-      "BaÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o privado con ducha",
+      "Varias camas cómodas",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -138,14 +138,14 @@ const rooms = [
   {
     id: 9,
     number: "Hab. 12",
-    title: "HabitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n Individual",
+    title: "Habitación Individual",
     category: "Individual",
     people: "1 personas",
-    size: "5 mÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â²",
-    image: "/habitaciones/hab-09.png",
+    size: "5 m²",
+    image: "//habitaciones/habitacion12.webp",
     features: [
       "Cama individual",
-      "Sin baÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â±o",
+      "Sin baño",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -193,8 +193,8 @@ export function RoomsPage() {
             </h1>
 
             <p className="max-w-3xl mx-auto text-base sm:text-lg text-[#F2E7D0]/75 leading-relaxed">
-              Elige la habitaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n ideal para tu estadÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­a en
-              CelendÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â­n. Ambientes cÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³modos, atenciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n cÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡lida y
+              Elige la habitación ideal para tu estadía en
+              Celendín. Ambientes cómodos, atención cálida y
               servicios pensados para tu descanso.
             </p>
           </div>
@@ -239,7 +239,7 @@ export function RoomsPage() {
 
                 </div>
 
-                {/* InformaciÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â³n */}
+                {/* Información */}
                 <div className="px-[24px] py-[5px]">
                   <h2 className="font-serif text-[1.5rem] sm:text-[1.7rem] text-[#F2E7D0] mb-3 leading-tight">
                     {room.title}

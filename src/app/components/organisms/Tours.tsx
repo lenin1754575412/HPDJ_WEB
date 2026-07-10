@@ -66,7 +66,7 @@ export function Tours() {
     {
       image:
         "https://static.wixstatic.com/media/f25e49_bcde595778aa4985a011bddba01b7b7f~mv2.jpg/v1/fill/w_980,h_653,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/f25e49_bcde595778aa4985a011bddba01b7b7f~mv2.jpg",
-      title: "Circuito CelendÃ­n, Jose Galvez, Sucre, Jorge Chavez",
+      title: "Circuito Celendín, Jose Galvez, Sucre, Jorge Chavez",
       includes: [
         "Transporte turistico",
         "Hospedaje",

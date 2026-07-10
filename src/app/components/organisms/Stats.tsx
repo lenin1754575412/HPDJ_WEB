@@ -20,7 +20,7 @@ export function Stats() {
     {
       icon: HiLocationMarker,
       number: "CÃ©ntrico",
-      label: "UbicaciÃ³n en CelendÃ­n",
+      label: "UbicaciÃ³n en Celendín",
     },
   ];
 

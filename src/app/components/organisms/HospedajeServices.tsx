@@ -36,7 +36,7 @@ const services = [
   {
     icon: FaMapMarkedAlt,
     title: 'Tours TurÃ­sticos',
-    desc: 'Organizamos tours a los principales atractivos de CelendÃ­n y Cajamarca.',
+    desc: 'Organizamos tours a los principales atractivos de Celendín y Cajamarca.',
   },
   {
     icon: FaMobileAlt,
@@ -60,7 +60,7 @@ export function HospedajeServices() {
             Servicios Incluidos
           </h2>
           <p className="text-lg text-[#F2E7D0]/70 max-w-2xl mx-auto">
-            Todo lo que necesitas para una estadÃ­a cÃ³moda y tranquila en CelendÃ­n.
+            Todo lo que necesitas para una estadÃ­a cÃ³moda y tranquila en Celendín.
           </p>
         </div>
 

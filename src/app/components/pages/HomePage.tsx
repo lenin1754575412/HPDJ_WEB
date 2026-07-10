@@ -179,7 +179,7 @@ export function HomePage() {
         </div>
       </section>
 
-      {/* CafeterÃ­a */}
+      {/* Cafetería */}
       <section className="py-24 bg-gradient-to-br from-[#2A2520] via-[#1C1815] to-[#171411] relative overflow-hidden">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#B58A4F]/8 rounded-full blur-3xl pointer-events-none"></div>
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-[#D8B17A]/8 rounded-full blur-3xl pointer-events-none"></div>
@@ -192,7 +192,7 @@ export function HomePage() {
               <div className="relative h-[420px] lg:h-[520px] rounded-3xl overflow-hidden border border-[#B58A4F]/20 shadow-2xl">
                 <img
                   src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
-                  alt="CafeterÃ­a H Peru Tours"
+                  alt="Cafetería H Peru Tours"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#171411]/90 via-[#171411]/20 to-transparent"></div>
@@ -201,7 +201,7 @@ export function HomePage() {
                     <div className="flex items-center justify-between">
                       <div>
                         <p className="text-xl font-serif text-[#F2E7D0] mb-1">
-                          CafeterÃ­a
+                          Cafetería
                         </p>
                         <p className="text-[#D8B17A] text-sm flex items-center gap-1.5">
                           <FaClock size={11} /> 6:00 AM â€“ 10:30
@@ -226,7 +226,7 @@ export function HomePage() {
                 <div className="inline-block mb-4">
                   <span className="inline-flex items-center gap-2 text-[#D8B17A] tracking-[0.3em] uppercase text-xs font-medium border border-[#B58A4F]/30 px-5 py-2.5 rounded-full backdrop-blur-sm bg-[#171411]/30">
                     <FaUtensils size={10} />
-                    Nuestra CafeterÃ­a
+                    Nuestra Cafetería
                   </span>
                 </div>
                 <h2 className="text-4xl lg:text-5xl font-serif text-[#F2E7D0] mb-5">
@@ -319,10 +319,10 @@ export function HomePage() {
                 </span>
               </div>
               <h2 className="text-3xl lg:text-4xl font-serif text-[#F2E7D0]">
-                Estamos en el centro de CelendÃ­n
+                Estamos en el centro de Celendín
               </h2>
               <p className="text-[#F2E7D0]/70">
-                Jr. Arequipa 213, CelendÃ­n, Cajamarca, PerÃº. A
+                Jr. Arequipa 213, Celendín, Cajamarca, Perú. A
                 pocos pasos de la Plaza de Armas y los
                 principales atractivos de la ciudad.
               </p>

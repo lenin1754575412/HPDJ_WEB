@@ -32,7 +32,7 @@ export function About() {
                   H PERU TOURS
                 </span>{" "}
                 naciÃ³ de la pasiÃ³n por mostrar al mundo las
-                maravillas del PerÃº. Desde hace mÃ¡s de una
+                maravillas del Perú. Desde hace mÃ¡s de una
                 dÃ©cada, nos especializamos en crear experiencias
                 premium que combinan la riqueza cultural de
                 nuestro paÃ­s con el confort y la elegancia que
@@ -45,13 +45,13 @@ export function About() {
                 paquetes turÃ­sticos exclusivos que incluyen
                 hospedaje de lujo, gastronomÃ­a de clase mundial
                 y tours guiados por expertos que conocen cada
-                rincÃ³n mÃ¡gico del PerÃº.
+                rincÃ³n mÃ¡gico del Perú.
               </p>
 
               <p>
                 Creemos que cada viaje debe ser una historia
                 Ãºnica. Por eso, nos enfocamos en grupos
-                reducidos y atenciÃ³n personalizada, asegurando
+                reducidos y atención personalizada, asegurando
                 que cada detalle supere tus expectativas.
               </p>
             </div>
@@ -68,20 +68,20 @@ export function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-[#171411]/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
                 <p className="text-[#F2E7D0] font-serif text-lg sm:text-xl leading-tight">Nuestro Hospedaje</p>
-                <p className="text-[#D8B17A] text-sm">Comodidad en el corazÃ³n de CelendÃ­n</p>
+                <p className="text-[#D8B17A] text-sm">Comodidad en el corazón de Celendín</p>
               </div>
             </div>
 
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-[#B58A4F]/20 h-56 sm:h-64">
               <img
                 src="/cafeteria/cafeteria-principal.jpg"
-                alt="CafeterÃ­a H Peru Tours"
+                alt="Cafetería H Peru Tours"
                 className="w-full h-full object-cover"
                 onError={(e) => { (e.currentTarget as HTMLImageElement).src = 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop'; }}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#171411]/80 via-transparent to-transparent" />
               <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-[#F2E7D0] font-serif text-lg sm:text-xl leading-tight">Nuestra CafeterÃ­a</p>
+                <p className="text-[#F2E7D0] font-serif text-lg sm:text-xl leading-tight">Nuestra Cafetería</p>
                 <p className="text-[#D8B17A] text-sm">Sabores peruanos autÃ©nticos</p>
               </div>
             </div>
@@ -121,7 +121,7 @@ export function About() {
                 huÃ©spedes una estancia inolvidable, basada en la
                 comodidad, hospitalidad, calidad, seguridad y
                 cultura local, creando una conexiÃ³n autÃ©ntica
-                con CelendÃ­n y sus alrededores. Nos esforzamos
+                con Celendín y sus alrededores. Nos esforzamos
                 por superar las expectativas de nuestros
                 clientes, promoviendo el desarrollo turÃ­stico y
                 econÃ³mico de la comunidad.
@@ -138,7 +138,7 @@ export function About() {
               </h3>
 
               <p className="text-[#F2E7D0]/75 leading-7 text-sm sm:text-base lg:text-lg">
-                Ser el hospedaje de referencia en CelendÃ­n,
+                Ser el hospedaje de referencia en Celendín,
                 reconocido por ofrecer experiencias Ãºnicas, con
                 un servicio personalizado, excelencia en calidad
                 y un compromiso sostenible con el entorno y la
@@ -168,7 +168,7 @@ export function About() {
               </div>
 
               <h3 className="text-2xl sm:text-3xl font-serif text-[#D8B17A] mb-4">
-                Horario de atenciÃ³n
+                Horario de atención
               </h3>
 
               <p className="text-[#F2E7D0]/75 leading-7 text-sm sm:text-base lg:text-lg">

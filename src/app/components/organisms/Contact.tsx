@@ -104,7 +104,7 @@ export function Contact() {
               <div>
                 <h4 className="text-[#F2E7D0] font-serif text-lg mb-2">UbicaciÃ³n</h4>
                 <p className="text-[#D8B17A] text-base">Jr. Arequipa 213</p>
-                <p className="text-[#F2E7D0]/60 text-xs mt-2">CelendÃ­n, Cajamarca, PerÃº</p>
+                <p className="text-[#F2E7D0]/60 text-xs mt-2">Celendín, Cajamarca, Perú</p>
               </div>
             </div>
           </div>
@@ -190,7 +190,7 @@ export function Contact() {
               {status === 'success' && (
                 <div className="flex items-center gap-3 bg-emerald-900/30 border border-emerald-500/30 text-emerald-300 px-4 py-3 rounded-xl text-sm">
                   <FiCheckCircle size={18} />
-                  Â¡Mensaje enviado! Te responderemos pronto.
+                  ¡Mensaje enviado! Te responderemos pronto.
                 </div>
               )}
               {status === 'error' && (

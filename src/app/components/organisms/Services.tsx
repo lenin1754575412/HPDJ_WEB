@@ -6,7 +6,7 @@ export function Services() {
     {
       icon: FaMountain,
       title: 'Tours Guiados',
-      description: 'Descubre los destinos mÃ¡s atractivos de CelendÃ­n con hermosas vistas que te llevarÃ¡n a travÃ©s de experiencias inolvidables.',
+      description: 'Descubre los destinos mÃ¡s atractivos de Celendín con hermosas vistas que te llevarÃ¡n a travÃ©s de experiencias inolvidables.',
     },
     {
       icon: FaHotel,

@@ -25,7 +25,7 @@ export function Header() {
     { name: "Habitaciones", path: "/habitaciones" },
     { name: "Tours", path: "/tours" },
     { name: "Nosotros", path: "/nosotros" },
-    { name: "CafeterÃ­a", path: "/cafeteria" },
+    { name: "Cafetería", path: "/cafeteria" },
     { name: "Contacto", path: "/contacto" },
   ];
 

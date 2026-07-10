@@ -18,7 +18,7 @@ export function QuickBooking() {
 - Entrada: ${checkIn || "por confirmar"}
 - Salida: ${checkOut || "por confirmar"}
 - HuÃ©spedes: ${guests}
-- HabitaciÃ³n: ${roomType || "cualquier tipo"}`;
+- Habitación: ${roomType || "cualquier tipo"}`;
 
     const encodedMsg = encodeURIComponent(msg);
 
@@ -141,25 +141,25 @@ export function QuickBooking() {
                     value="Simple"
                     className="bg-[#1C1815]"
                   >
-                    HabitaciÃ³n Individual
+                    Habitación Individual
                   </option>
                   <option
                     value="Doble"
                     className="bg-[#1C1815]"
                   >
-                    HabitaciÃ³n Doble
+                    Habitación Doble
                   </option>
                   <option
                     value="Matrimonial"
                     className="bg-[#1C1815]"
                   >
-                    HabitaciÃ³n Matrimonial
+                    Habitación Matrimonial
                   </option>
                   <option
                     value="Multiple"
                     className="bg-[#1C1815]"
                   >
-                    HabitaciÃ³n Multiple
+                    Habitación Multiple
                   </option>
                 </select>
               </div>

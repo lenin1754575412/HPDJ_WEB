@@ -29,7 +29,7 @@ const policies = [
   {
     icon: FaMobileAlt,
     title: 'Pagos',
-    value: 'Efectivo Â· Yape Â· Plin',
+    value: 'Efectivo · Yape · Plin',
     note: 'Sin tarjeta de crÃ©dito',
   },
   {

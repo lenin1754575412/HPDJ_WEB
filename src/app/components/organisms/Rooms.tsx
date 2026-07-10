@@ -5,13 +5,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n Individual",
+    title: "Habitación Individual",
     capacity: "1 persona",
-    size: "18 mÂ²",
+    size: "18 m²",
     price: "S/. 60",
     services: [
       "Cama individual",
-      "BaÃ±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -21,13 +21,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n Individual",
+    title: "Habitación Individual",
     capacity: "1 persona",
-    size: "18 mÂ²",
+    size: "18 m²",
     price: "S/. 60",
     services: [
       "Cama individual",
-      "BaÃ±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -37,13 +37,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n Individual",
+    title: "Habitación Individual",
     capacity: "1 persona",
-    size: "18 mÂ²",
+    size: "18 m²",
     price: "S/. 60",
     services: [
       "Cama individual",
-      "BaÃ±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -53,13 +53,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n Doble",
+    title: "Habitación Doble",
     capacity: "2 personas",
-    size: "24 mÂ²",
+    size: "24 m²",
     price: "S/. 90",
     services: [
       "2 camas individuales",
-      "BaÃ±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -69,13 +69,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n Doble",
+    title: "Habitación Doble",
     capacity: "2 personas",
-    size: "24 mÂ²",
+    size: "24 m²",
     price: "S/. 90",
     services: [
       "2 camas individuales",
-      "BaÃ±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -85,13 +85,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n Doble",
+    title: "Habitación Doble",
     capacity: "2 personas",
-    size: "24 mÂ²",
+    size: "24 m²",
     price: "S/. 90",
     services: [
       "2 camas individuales",
-      "BaÃ±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -101,13 +101,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n Matrimonial",
+    title: "Habitación Matrimonial",
     capacity: "2 personas",
-    size: "28 mÂ²",
+    size: "28 m²",
     price: "S/. 100",
     services: [
       "Cama matrimonial",
-      "BaÃ±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -117,13 +117,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n Matrimonial",
+    title: "Habitación Matrimonial",
     capacity: "2 personas",
-    size: "28 mÂ²",
+    size: "28 m²",
     price: "S/. 100",
     services: [
       "Cama matrimonial",
-      "BaÃ±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -133,13 +133,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n Matrimonial",
+    title: "Habitación Matrimonial",
     capacity: "2 personas",
-    size: "28 mÂ²",
+    size: "28 m²",
     price: "S/. 100",
     services: [
       "Cama matrimonial",
-      "BaÃ±o privado con ducha",
+      "Baño privado con ducha",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -149,13 +149,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n MÃºltiple",
+    title: "Habitación MÃºltiple",
     capacity: "3-5 personas",
-    size: "36 mÂ²",
+    size: "36 m²",
     price: "S/. 140",
     services: [
       "Camas mÃºltiples",
-      "BaÃ±o privado amplio",
+      "Baño privado amplio",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -165,13 +165,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n MÃºltiple",
+    title: "Habitación MÃºltiple",
     capacity: "3-5 personas",
-    size: "36 mÂ²",
+    size: "36 m²",
     price: "S/. 140",
     services: [
       "Camas mÃºltiples",
-      "BaÃ±o privado amplio",
+      "Baño privado amplio",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],
@@ -181,13 +181,13 @@ const rooms = [
   {
     image:
       "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&h=600&fit=crop",
-    title: "HabitaciÃ³n MÃºltiple",
+    title: "Habitación MÃºltiple",
     capacity: "3-5 personas",
-    size: "36 mÂ²",
+    size: "36 m²",
     price: "S/. 140",
     services: [
       "Camas mÃºltiples",
-      "BaÃ±o privado amplio",
+      "Baño privado amplio",
       "WiFi gratuito",
       "Agua caliente 24h",
     ],

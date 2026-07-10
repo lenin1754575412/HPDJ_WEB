@@ -8,7 +8,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <img
           src="https://images.unsplash.com/photo-1730367019960-9906d9cbbf05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBob3RlbCUyMGludGVyaW9yJTIwbG9iYnklMjBlbGVnYW50fGVufDF8fHx8MTc3ODg1MTc0NHww&ixlib=rb-4.1.0&q=80&w=1920"
-          alt="Hospedaje PerÃº Tours"
+          alt="Hospedaje Perú Tours"
           className="w-full h-full object-cover"
         />
 
@@ -22,7 +22,7 @@ export function Hero() {
           {/* Etiqueta */}
           <div className="flex items-center gap-3 mb-8">
             <span className="text-[#D8B17A] uppercase tracking-[0.35em] text-sm">
-              CelendÃ­n, Cajamarca
+              Celendín, Cajamarca
             </span>
             <div className="w-16 h-px bg-[#B58A4F]" />
           </div>
@@ -45,13 +45,13 @@ export function Hero() {
                   "0 2px 5px rgba(0,0,0,0.4), 0 0 15px rgba(205,127,50,0.5), 0 0 30px rgba(184,115,51,0.3)",
               }}
             >
-              PerÃº Tours
+              Perú Tours
             </span>
           </h1>
 
           <p className="text-lg lg:text-xl text-[#F2E7D0]/70 leading-relaxed mb-10 max-w-lg">
-            Hospedaje premium en el corazÃ³n de CelendÃ­n. Vive la
-            magia del PerÃº con la comodidad y el lujo que
+            Hospedaje premium en el corazón de Celendín. Vive la
+            magia del Perú con la comodidad y el lujo que
             mereces.
           </p>
 
